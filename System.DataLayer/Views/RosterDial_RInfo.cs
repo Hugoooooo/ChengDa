@@ -13,6 +13,7 @@ namespace System.DataLayer.Views
         public enum ncFields {RSD_SERNO, RSD_STATUS, RSD_ITEMTYPE, RSD_ITEM, RSD_AMOUNT, RSD_COMMENT, RSD_DEALER, RSD_DEALDDTTM, RSD_MODIFIEDBY, RSD_MODIFIEDDTTM
                             , RSD_INSERTBY, RSD_INSERTDTTM, RST_SERNO, RST_MAIN, RST_NAME, RST_SEX, RST_PHONE1, RST_PHONE2, RST_MOBILE, RST_FAX
                             , RST_ADDR, RST_PRINCIPAL, RST_COMMENT, RST_MODIFIEDDTTM, RST_MODIFIEDBY, RST_INSERTBY, RST_INSERTDTTM}
+        public enum ncSort { Default }
         #endregion
 
         #region Fields
@@ -99,6 +100,17 @@ namespace System.DataLayer.Views
             base.ConditionDictionary.Add("dealer", " RSD.RSD_DEALER = N'?' ");
             base.ConditionDictionary.Add("comment", " RSD.RSD_COMMENT like N'%?%' ");
 
+            base.OrderByDictionary.Add("Default", " RSD_MODIFIEDDTTM desc ");
+            base.OrderByDictionary.Add("dgvSale_CSTName", " RST.RST_NAME ");
+            base.OrderByDictionary.Add("dgvSale_Main", " RST.RST_MAIN ");
+            base.OrderByDictionary.Add("dgvSale_Status", " RSD.RSD_STATUS ");
+            base.OrderByDictionary.Add("dgvSale_Type", " RSD.RSD_ITEMTYPE ");
+            base.OrderByDictionary.Add("dgvSale_Item", " RSD.RSD_ITEM ");
+            base.OrderByDictionary.Add("dgvSale_Dealer", " RSD.RSD_DEALER ");
+            base.OrderByDictionary.Add("dgvSale_Amount", " RSD.RSD_AMOUNT ");
+            base.OrderByDictionary.Add("dgvSale_Comment", " RSD.RSD_COMMENT ");
+            base.OrderByDictionary.Add("dgvSale_DealDTTM", " RSD.RSD_DEALDDTTM ");
+            base.OrderByDictionary.Add("dgvSale_ModifyDTTM", " RSD.RSD_MODIFIEDDTTM ");
         }
        
 

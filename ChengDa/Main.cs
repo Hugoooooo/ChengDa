@@ -42,9 +42,10 @@ namespace ChengDa
             dpkMemberInsertEDTTM.Value = DateTime.Today;
             dpkMemberModifySDTTM.Value = DateTime.Today;
             dpkMemberModifyEDTTM.Value = DateTime.Today;
+            ddlMemberPage.Items.Clear();
             lblMemberTotal.Text = "0";
         }
-        private void memberLoadData()
+        private void memberLoadData(int pageNum)
         {
             dgvMember.Rows.Clear();
             DataGridViewRowCollection rows = dgvMember.Rows;
@@ -64,16 +65,28 @@ namespace ChengDa
                 vRoster.Conditions += " AND " + vRoster.getCondition(RosterInfo.ncConditions.modifySDTTM.ToString(), dpkMemberModifySDTTM.Value.ToString("yyyy/MM/dd"));
             if (!string.IsNullOrEmpty(dpkMemberModifyEDTTM.Value.ToString()) && ckbMemberModifyDTTM.Checked)
                 vRoster.Conditions += " AND " + vRoster.getCondition(RosterInfo.ncConditions.modifyEDTTM.ToString(), dpkMemberModifyEDTTM.Value.ToString("yyyy/MM/dd"));
-            vRoster.load();
-            if (vRoster.Count > 0)
+            //組排序指令
+            if(dgvMember.SortedColumn is null)
+                vRoster.OrderBy = vRoster.getOptionOrderBy(RosterInfo.ncSort.Default.ToString());
+            else
             {
-                while (!vRoster.IsEof)
-                {
-                    rows.Add(new Object[] { vRoster.RST_SERNO, vRoster.RST_NAME, vRoster.RST_MOBILE, vRoster.RST_PHONE1, vRoster.RST_PHONE2, vRoster.RST_ADDR, vRoster.RST_INSERTDTTM, vRoster.RST_MODIFIEDDTTM });
-                    vRoster.next();
-                }
+                string sortname = dgvMember.SortedColumn.Name;
+                string sortmode = APConfig.GetValueFromDescription<SortMode>(dgvMember.SortOrder.ToString()).ToString();
+                vRoster.OrderBy = string.Format("{0} {1}", vRoster.getOptionOrderBy(sortname), sortmode);
             }
+            //查詢頁數初始化且自動跳轉至第一頁
+            if (pageNum == 0)
+            {
+                APConfig.loadPage(ddlMemberPage, vRoster.calculatePage(APConfig.PageCount));
+                return;
+            }
+            //塞入資料
             lblMemberTotal.Text = vRoster.calculateCount().ToString();
+            DataSet ds = APConfig.GoPage(vRoster.SQLStatement, pageNum);
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                rows.Add(new Object[] { dr.ItemArray[0], dr.ItemArray[1], dr.ItemArray[6], dr.ItemArray[4], dr.ItemArray[5], dr.ItemArray[8], dr.ItemArray[10], dr.ItemArray[13] });
+            }
         }
         private void btnMemberDelete_Click(object sender, EventArgs e)
         {
@@ -91,7 +104,7 @@ namespace ChengDa
                     Roster entRoster = new Roster(APConfig.Conn);
                     string sConditions = entRoster.getCondition(Roster.ncConditions.sernolist.ToString(), delSernoList);
                     entRoster.deleteAll(sConditions);
-                    memberLoadData();
+                    memberLoadData(ddlMemberPage.SelectedIndex + 1);
                     APConfig.SweetAlert(ShowBoxType.alert, "刪除完成");
                 }
             }
@@ -114,7 +127,7 @@ namespace ChengDa
         }
         private void btnMemberSearch_Click(object sender, EventArgs e)
         {
-            memberLoadData();
+            memberLoadData(0);
         }
         private void btnMemberModify_Click(object sender, EventArgs e)
         {
@@ -129,11 +142,12 @@ namespace ChengDa
                     panelMember.Visible = true;
                     panelMask.Visible = false;
                 }
-                memberLoadData();
+                memberLoadData(ddlMemberPage.SelectedIndex + 1);
             }
         }
         private void dgvMember_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             DataGridViewRow row = this.dgvMember.SelectedRows[0];
             using (var form = new MemberEdit(mode.View, row.Cells["dgvMember_Serno"].Value.ToString()))
             {
@@ -143,6 +157,26 @@ namespace ChengDa
                 panelMember.Visible = true;
                 panelMask.Visible = false;
             }
+        }
+        private void btnMemberRight_Click(object sender, EventArgs e)
+        {
+            if (APConfig.nextPage(ref ddlMemberPage))
+                memberLoadData(ddlMemberPage.SelectedIndex + 1);
+        }
+        private void btnMemberLeft_Click(object sender, EventArgs e)
+        {
+            if (APConfig.prevPage(ref ddlMemberPage))
+                memberLoadData(ddlMemberPage.SelectedIndex + 1);
+        }
+        private void ddlMemberPage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlMemberPage.SelectedIndex == -1) return;
+            memberLoadData(ddlMemberPage.SelectedIndex + 1);
+        }
+        private void dgvMember_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex == -1 || dgvMember.RowCount == 0) return;
+            memberLoadData(ddlMemberPage.SelectedIndex + 1);
         }
         #endregion
 
@@ -170,9 +204,9 @@ namespace ChengDa
             dpkSaleModifyEDTTM.Value = DateTime.Today;
             lblSaleTotal.Text = "0";
             lblSaleTotalAmount.Text = "0 元";
-     
+            ddlSalePage.Items.Clear();
         }
-        private void saleLoadData()
+        private void saleLoadData(int pageNum)
         {
             int total = 0;
             dgvSale.Rows.Clear();
@@ -210,21 +244,42 @@ namespace ChengDa
                 else
                     view.Conditions += " AND " + view.getCondition(RosterDial_RInfo.ncConditions.type.ToString(), ddlSaleType.SelectedItem.ToString());
             }
+            //組排序指令
+            if (dgvSale.SortedColumn is null)
+                view.OrderBy = view.getOptionOrderBy(RosterDial_RInfo.ncSort.Default.ToString());
+            else
+            {
+                string sortname = dgvSale.SortedColumn.Name;
+                string sortmode = APConfig.GetValueFromDescription<SortMode>(dgvSale.SortOrder.ToString()).ToString();
+                view.OrderBy = string.Format("{0} {1}", view.getOptionOrderBy(sortname), sortmode);
+            }
+            //查詢頁數初始化且自動跳轉至第一頁
+            if (pageNum == 0)
+            {
+                APConfig.loadPage(ddlSalePage, view.calculatePage(APConfig.PageCount));
+                return;
+            }
+            //計算總合
             if (view.load())
             {
                 while (!view.IsEof)
                 {
                     total += int.Parse(view.RSD_AMOUNT);
-                    rows.Add(new Object[] { view.RSD_SERNO, view.RST_NAME,view.RST_MAIN,view.RSD_STATUS,view.RSD_ITEMTYPE,view.RSD_ITEM,view.RSD_DEALER,view.RSD_AMOUNT,view.RSD_COMMENT,view.RSD_DEALDDTTM,view.RSD_MODIFIEDDTTM });
                     view.next();
                 }
+            }
+            //塞入資料
+            DataSet ds = APConfig.GoPage(view.SQLStatement, pageNum);
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                rows.Add(new Object[] { dr.ItemArray[0], dr.ItemArray[14], dr.ItemArray[13], dr.ItemArray[1], dr.ItemArray[2], dr.ItemArray[3], dr.ItemArray[6], dr.ItemArray[4], dr.ItemArray[5], dr.ItemArray[7], dr.ItemArray[10] });
             }
             lblSaleTotal.Text = view.calculateCount().ToString();
             lblSaleTotalAmount.Text = string.Format("{0:n0} 元", total);
         }
         private void btnSaleSearch_Click(object sender, EventArgs e)
         {
-            saleLoadData();
+            saleLoadData(0);
         }
         private void btnSaleAdd_Click(object sender, EventArgs e)
         {
@@ -251,7 +306,7 @@ namespace ChengDa
                     panelSale.Visible = true;
                     panelMask.Visible = false;
                 }
-                saleLoadData();
+                saleLoadData(ddlSalePage.SelectedIndex + 1);
             }
         }
         private void btnSaleDelete_Click(object sender, EventArgs e)
@@ -270,7 +325,7 @@ namespace ChengDa
                     RosterDial entRosterDial = new RosterDial(APConfig.Conn);
                     string sConditions = entRosterDial.getCondition(RosterDial.ncConditions.sernolist.ToString(), delSernoList);
                     entRosterDial.deleteAll(sConditions);
-                    saleLoadData();
+                    saleLoadData(ddlSalePage.SelectedIndex + 1);
                     APConfig.SweetAlert(ShowBoxType.alert, "刪除完成");
                 }
             }
@@ -281,6 +336,7 @@ namespace ChengDa
         }
         private void dgvSale_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             DataGridViewRow row = this.dgvSale.SelectedRows[0];
             using (var form = new TradeEdit(mode.View, row.Cells["dgvSale_Serno"].Value.ToString()))
             {
@@ -290,6 +346,26 @@ namespace ChengDa
                 panelSale.Visible = true;
                 panelMask.Visible = false;
             }
+        }
+        private void btnSaleRight_Click(object sender, EventArgs e)
+        {
+            if (APConfig.nextPage(ref ddlSalePage))
+                saleLoadData(ddlSalePage.SelectedIndex + 1);
+        }
+        private void btnSaleLeft_Click(object sender, EventArgs e)
+        {
+            if (APConfig.prevPage(ref ddlSalePage))
+                saleLoadData(ddlSalePage.SelectedIndex + 1);
+        }
+        private void ddlSalePage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlSalePage.SelectedIndex == -1) return;
+            saleLoadData(ddlSalePage.SelectedIndex + 1);
+        }
+        private void dgvSale_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex == -1 || dgvSale.RowCount == 0) return;
+            saleLoadData(ddlSalePage.SelectedIndex + 1);
         }
         #endregion
 
@@ -382,6 +458,7 @@ namespace ChengDa
         }
         private void dgvPhrase_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             DataGridViewRow row = this.dgvPhrase.SelectedRows[0];
             using (var form = new PhraseEdit(mode.View, ddlPhraseCategory.SelectedItem.ToString(), row.Cells["dgvPhrase_Serno"].Value.ToString()))
             {
@@ -425,8 +502,9 @@ namespace ChengDa
             lblInventoryPOSTAMT.Text = "0 元";
             lblInventoryRETURNAMT.Text = "0 元";
             lblInventoryTotal.Text = "0";
+            ddlInventoryPage.Items.Clear();
         }
-        private void inventoryLoadData()
+        private void inventoryLoadData(int pageNum)
         {
             int importTotal = 0, exportTotal = 0, itemTotal = 0, postTotal = 0, returnTotal = 0;
             dgvInventory.Rows.Clear();
@@ -460,6 +538,32 @@ namespace ChengDa
                 view.Conditions += " AND " + view.getCondition(InventroyRPTInfo.ncConditions.status.ToString(), ddlInventoryStatus.SelectedItem.ToString());
 
             view.condFormat(string.Format(" AND {0} ",view.Conditions));
+
+
+
+            //組排序指令
+            if (dgvInventory.SortedColumn is null)
+                view.OrderBy = view.getOptionOrderBy(RosterDial_RInfo.ncSort.Default.ToString());
+            else
+            {
+                string sortname = dgvInventory.SortedColumn.Name;
+                string sortmode = APConfig.GetValueFromDescription<SortMode>(dgvInventory.SortOrder.ToString()).ToString();
+                view.OrderBy = string.Format("{0} {1}", view.getOptionOrderBy(sortname), sortmode);
+            }
+            //查詢頁數初始化且自動跳轉至第一頁
+            if (pageNum == 0)
+            {
+                APConfig.loadPage(ddlInventoryPage, view.calculatePage(APConfig.PageCount));
+                return;
+            }
+            //塞入資料
+            DataSet ds = APConfig.GoPage(view.SQLStatement, pageNum);
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                //rows.Add(new Object[] { view.SERNOLIST, view.INV_NAME, view.ITEMTOTAL, view.INAMT, view.OUTAMT, view.POSTAMT, view.RETURNAMT });
+                rows.Add(new Object[] { dr.ItemArray[1], dr.ItemArray[0], dr.ItemArray[2], dr.ItemArray[3], dr.ItemArray[4], dr.ItemArray[5], dr.ItemArray[6] });
+            }
+            //計算總合
             if (view.load())
             {
                 while (!view.IsEof)
@@ -468,7 +572,6 @@ namespace ChengDa
                     exportTotal += view.OUTAMT;
                     postTotal += view.POSTAMT;
                     returnTotal += view.RETURNAMT;
-                    rows.Add(new Object[] { view.SERNOLIST, view.INV_NAME, view.ITEMTOTAL, view.INAMT,view.OUTAMT,view.POSTAMT,view.RETURNAMT });
                     itemTotal += Convert.ToInt32(view.ITEMTOTAL);
                     view.next();
                 }
@@ -481,9 +584,8 @@ namespace ChengDa
         }
         private void btnInventorySearch_Click(object sender, EventArgs e)
         {
-            inventoryLoadData();
+            inventoryLoadData(0);
         }
-
         private void btnInventoryImportAdd_Click(object sender, EventArgs e)
         {
             using (var form = new InventoryImportEdit(mode.Add))
@@ -545,10 +647,9 @@ namespace ChengDa
                     panelInventory.Visible = true;
                     panelMask.Visible = false;
                 }
-                inventoryLoadData();
+                inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
             }
         }
-
         private void btnInventoryDelete_Click(object sender, EventArgs e)
         {
             try
@@ -565,7 +666,7 @@ namespace ChengDa
                     Inventory ent = new Inventory(APConfig.Conn);
                     string sConditions = ent.getCondition(Inventory.ncConditions.sernolist.ToString(), delSernoList);
                     ent.deleteAll(sConditions);
-                    inventoryLoadData();
+                    inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
                     APConfig.SweetAlert(ShowBoxType.alert, "刪除完成");
                 }
             }
@@ -574,9 +675,9 @@ namespace ChengDa
                 APConfig.SweetAlert(ShowBoxType.alert, string.Format("刪除失敗 {0}", ex.Message));
             }
         }
-
         private void dgvInventory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             DataGridViewRow row = this.dgvInventory.SelectedRows[0];
             using (var form = new PickInventoryCode(mode.View, row.Cells["dgvInventory_Serno"].Value.ToString()))
             {
@@ -586,6 +687,26 @@ namespace ChengDa
                 panelInventory.Visible = true;
                 panelMask.Visible = false;
             }
+        }
+        private void btnInventoryRight_Click(object sender, EventArgs e)
+        {
+            if (APConfig.nextPage(ref ddlInventoryPage))
+                inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
+        }
+        private void btnInventoryLeft_Click(object sender, EventArgs e)
+        {
+            if (APConfig.prevPage(ref ddlInventoryPage))
+                inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
+        }
+        private void ddlInventoryPage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlInventoryPage.SelectedIndex == -1) return;
+            inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
+        }
+        private void dgvInventory_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex == -1 || dgvInventory.RowCount == 0) return;
+            inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
         }
         #endregion
 
@@ -630,7 +751,6 @@ namespace ChengDa
             ShowMainPanel(panelInventory);
             lblBarTitle.Text = "進銷存專區";
             inventoryInitial();
-            //inventoryLoadData();
         }
 
         private void ShowMainPanel(Panel showPanel)

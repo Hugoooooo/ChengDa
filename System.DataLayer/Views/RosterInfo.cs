@@ -11,6 +11,7 @@ namespace System.DataLayer.Views
         #region Name Config
         public enum ncConditions { serno, main,mobile, name, address, phoneLike, createSDTTM, createEDTTM, modifySDTTM, modifyEDTTM }
         public enum ncFields { RST_SERNO, RST_MAIN,RST_NAME, RST_SEX, RST_PHONE1, RST_PHONE2, RST_MOBILE, RST_FAX, RST_ADDR, RST_COMMENT, RST_MODIFIEDDTTM, RST_MODIFIEDBY, RST_INSERTBY, RST_INSERTDTTM, RST_PRINCIPAL }
+        public enum ncSort { Default }
         #endregion
 
         #region Fields
@@ -65,6 +66,15 @@ namespace System.DataLayer.Views
             base.ConditionDictionary.Add("createEDTTM", " left(RST_INSERTDTTM,10) <= N'?'");
             base.ConditionDictionary.Add("modifySDTTM", " left(RST_MODIFIEDDTTM,10) >= N'?'");
             base.ConditionDictionary.Add("modifyEDTTM", " left(RST_MODIFIEDDTTM,10) <= N'?'");
+
+            base.OrderByDictionary.Add("Default", " RST_MODIFIEDDTTM desc ");
+            base.OrderByDictionary.Add("dgvMember_Name", " RST_NAME ");
+            base.OrderByDictionary.Add("dgvMember_Mobile", " RST_MOBILE ");
+            base.OrderByDictionary.Add("dgvMember_Phone1", " RST_PHONE1 ");
+            base.OrderByDictionary.Add("dgvMember_Phone2", " RST_PHONE2 ");
+            base.OrderByDictionary.Add("dgvMember_Addr", " RST_ADDR ");
+            base.OrderByDictionary.Add("dgvMember_InsertDTTM", " RST_INSERTDTTM ");
+            base.OrderByDictionary.Add("dgvMember_ModifyDTTM", " RST_MODIFIEDDTTM ");
         }
        
 

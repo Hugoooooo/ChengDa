@@ -12,6 +12,7 @@ namespace System.DataLayer.Views
         #region Name Config
         public enum ncConditions { code, name, importSDTTM, importEDTTM, exportSDTTM, exportEDTTM, status, dealer , postSDTTM , postEDTTM , returnSDTTM, returnEDTTM }
         public enum ncFields { INV_SERNO, INV_NAME , SERNOLIST , ITEMTOTAL, INAMT , OUTAMT , POSTAMT , RETURNAMT }
+        public enum ncSort { Default }
         #endregion
 
         #region Fields
@@ -65,6 +66,15 @@ namespace System.DataLayer.Views
             base.ConditionDictionary.Add("postEDTTM", " left(INV_POSTDTTM,10) <= N'?'");
             base.ConditionDictionary.Add("status", " INV_STATUS = N'?' ");
             base.ConditionDictionary.Add("dealer", " INV_OUTDEALER = N'?' ");
+
+
+            base.OrderByDictionary.Add("Default", " INV_NAME desc ");
+            base.OrderByDictionary.Add("dgvInventory_Name", " INV_NAME ");
+            base.OrderByDictionary.Add("dgvInventory_Count", " ITEMTOTAL ");
+            base.OrderByDictionary.Add("dgvInventory_INAMT", " INAMT ");
+            base.OrderByDictionary.Add("dgvInventory_OUTAMT", " OUTAMT ");
+            base.OrderByDictionary.Add("dgvInventory_POSTAMT", " POSTAMT ");
+            base.OrderByDictionary.Add("dgvInventory_RETURNAMT", " RETURNAMT ");
         }
        
 

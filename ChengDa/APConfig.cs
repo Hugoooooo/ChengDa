@@ -17,6 +17,8 @@ using System.Windows.Forms;
 using Bunifu.Framework.UI;
 using System.DataLayer.Views;
 using System.Framework;
+using System.Reflection;
+using System.ComponentModel;
 
 namespace ChengDa
 {
@@ -27,6 +29,8 @@ namespace ChengDa
         public static string MSSQLConnStringFormat = @"packet size=4096;Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};connect timeout=240;Min Pool Size=5;Max Pool Size=200";
 
         public static IConnection Conn = null;
+
+        public static readonly int PageCount = 50;
 
         public static Exception LastException = null;
 
@@ -122,6 +126,81 @@ namespace ChengDa
                 items[index] = string.Format("'{0}'", items[index]);
             }
             return string.Join(",", items);
+        }
+
+        public static ComboBox loadPage(ComboBox c, int maxPage)
+        {
+            c.Items.Clear();
+            for (int i = 1; i <= maxPage; i++)
+            {
+                c.Items.Add(i.ToString());
+            }
+            c.SelectedItem =
+            c.SelectedIndex = 0;
+            return c;
+        }
+
+        public static DataSet GoPage(string sqlCommend, int pageNum)
+        {
+            int start = (pageNum - 1) * PageCount;
+            DataSet ds = APConfig.Conn.fillDataSet(sqlCommend, start < 0 ? 0 : start, PageCount);
+            return ds;
+        }
+
+        /// <summary>
+        /// 上一頁
+        /// </summary>
+        public static bool prevPage(ref ComboBox ddlPage)
+        {
+            if (ddlPage.Items.Count == 0 || ddlPage.SelectedIndex == -1 || ddlPage.SelectedIndex == 0) return false;
+            ddlPage.SelectedIndex--;
+            return true;
+        }
+
+        /// <summary>
+        /// 下一頁
+        /// </summary>
+        public static bool nextPage(ref ComboBox ddlPage)
+        {
+            if (ddlPage.Items.Count == 0 || ddlPage.SelectedIndex == -1 || ddlPage.SelectedIndex == ddlPage.Items.Count - 1) return false;
+            ddlPage.SelectedIndex++;
+            return true;
+        }
+
+        public static string GetEnumDescription(Enum value)
+        {
+            FieldInfo fi = value.GetType().GetField(value.ToString());
+
+            DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+            if (attributes != null &&
+                attributes.Length > 0)
+                return attributes[0].Description;
+            else
+                return value.ToString();
+        }
+
+        public static T GetValueFromDescription<T>(string description)
+        {
+            var type = typeof(T);
+            if (!type.IsEnum) throw new InvalidOperationException();
+            foreach (var field in type.GetFields())
+            {
+                var attribute = Attribute.GetCustomAttribute(field,
+                    typeof(DescriptionAttribute)) as DescriptionAttribute;
+                if (attribute != null)
+                {
+                    if (attribute.Description == description)
+                        return (T)field.GetValue(null);
+                }
+                else
+                {
+                    if (field.Name == description)
+                        return (T)field.GetValue(null);
+                }
+            }
+            throw new ArgumentException("Not found.", "description");
+            // or return default(T);
         }
     }
 }

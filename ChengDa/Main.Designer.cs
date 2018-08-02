@@ -29,35 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelLeftBottom = new System.Windows.Forms.Panel();
+            this.panelPhrase = new System.Windows.Forms.Panel();
+            this.panelPhraseView = new System.Windows.Forms.Panel();
+            this.dgvPhrase = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvPhrase_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvsPhrase_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhrase_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhrase_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelPhraseSearch = new System.Windows.Forms.Panel();
+            this.txtPhraseType = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ddlPhraseCategory = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lblPhraseTotal = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtPhraseName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnPhraseDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPhraseSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPhraseModify = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPhraseAdd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label22 = new System.Windows.Forms.Label();
             this.panelStats = new System.Windows.Forms.Panel();
-            this.btnBackUp = new System.Windows.Forms.Button();
-            this.btnInventory = new System.Windows.Forms.Button();
-            this.btnPhrase = new System.Windows.Forms.Button();
-            this.btnTrade = new System.Windows.Forms.Button();
-            this.btnMember = new System.Windows.Forms.Button();
-            this.panelLeftTop = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelMask = new System.Windows.Forms.Panel();
             this.panelMember = new System.Windows.Forms.Panel();
             this.panelMemberView = new System.Windows.Forms.Panel();
             this.dgvMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -70,6 +81,11 @@
             this.dgvMember_InsertDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvMember_ModifyDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMemberSearch = new System.Windows.Forms.Panel();
+            this.ddlMemberPage = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.btnMemberRight = new System.Windows.Forms.PictureBox();
+            this.btnMemberLeft = new System.Windows.Forms.PictureBox();
             this.lblMemberTotal = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtMemberName = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -90,25 +106,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMemberTel = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panelBar = new System.Windows.Forms.Panel();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblBarTitle = new System.Windows.Forms.Label();
-            this.panelRight = new System.Windows.Forms.Panel();
+            this.panelMask = new System.Windows.Forms.Panel();
+            this.btnBackUp = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.btnPhrase = new System.Windows.Forms.Button();
+            this.btnTrade = new System.Windows.Forms.Button();
+            this.btnMember = new System.Windows.Forms.Button();
+            this.panelLeftTop = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInventory = new System.Windows.Forms.Panel();
             this.panelInventoryView = new System.Windows.Forms.Panel();
             this.dgvInventory = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dgvInventory_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory__Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory__Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory_INAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory_OUTAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory_POSTAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInventory_RETURNAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelInventorySearch = new System.Windows.Forms.Panel();
+            this.ddlInventoryPage = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.btnInventoryRight = new System.Windows.Forms.PictureBox();
+            this.btnInventoryLeft = new System.Windows.Forms.PictureBox();
             this.lblInventoryPOSTAMT = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.lblInventoryRETURNAMT = new System.Windows.Forms.Label();
@@ -150,6 +165,14 @@
             this.dpkInventoryINSDTTM = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panelBar = new System.Windows.Forms.Panel();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblBarTitle = new System.Windows.Forms.Label();
+            this.panelRight = new System.Windows.Forms.Panel();
             this.panelSale = new System.Windows.Forms.Panel();
             this.panelSaleView = new System.Windows.Forms.Panel();
             this.dgvSale = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -165,6 +188,11 @@
             this.dgvSale_DealDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvSale_ModifyDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSaleSearch = new System.Windows.Forms.Panel();
+            this.ddlSalePage = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.btnSaleRight = new System.Windows.Forms.PictureBox();
+            this.btnSaleLeft = new System.Windows.Forms.PictureBox();
             this.lblSaleTotalAmount = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.txtSaleComment = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -195,49 +223,42 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.panelPhrase = new System.Windows.Forms.Panel();
-            this.panelPhraseView = new System.Windows.Forms.Panel();
-            this.dgvPhrase = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dgvPhrase_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvsPhrase_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPhrase_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPhrase_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelPhraseSearch = new System.Windows.Forms.Panel();
-            this.txtPhraseType = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.ddlPhraseCategory = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lblPhraseTotal = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtPhraseName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.btnPhraseDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnPhraseSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnPhraseModify = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnPhraseAdd = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label22 = new System.Windows.Forms.Label();
+            this.dgvInventory_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_INAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_OUTAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_POSTAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInventory_RETURNAMT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelLeft.SuspendLayout();
             this.panelLeftBottom.SuspendLayout();
-            this.panelLeftTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelMember.SuspendLayout();
-            this.panelMemberView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
-            this.panelMemberSearch.SuspendLayout();
-            this.panelBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelRight.SuspendLayout();
-            this.panelInventory.SuspendLayout();
-            this.panelInventoryView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
-            this.panelInventorySearch.SuspendLayout();
-            this.panelSale.SuspendLayout();
-            this.panelSaleView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
-            this.panelSaleSearch.SuspendLayout();
             this.panelPhrase.SuspendLayout();
             this.panelPhraseView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhrase)).BeginInit();
             this.panelPhraseSearch.SuspendLayout();
+            this.panelMember.SuspendLayout();
+            this.panelMemberView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
+            this.panelMemberSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMemberRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMemberLeft)).BeginInit();
+            this.panelLeftTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelInventory.SuspendLayout();
+            this.panelInventoryView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
+            this.panelInventorySearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventoryRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventoryLeft)).BeginInit();
+            this.panelBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelRight.SuspendLayout();
+            this.panelSale.SuspendLayout();
+            this.panelSaleView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
+            this.panelSaleSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaleRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaleLeft)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -265,6 +286,363 @@
             this.panelLeftBottom.Size = new System.Drawing.Size(200, 586);
             this.panelLeftBottom.TabIndex = 1;
             // 
+            // panelPhrase
+            // 
+            this.panelPhrase.Controls.Add(this.panelPhraseView);
+            this.panelPhrase.Location = new System.Drawing.Point(0, 53);
+            this.panelPhrase.Name = "panelPhrase";
+            this.panelPhrase.Size = new System.Drawing.Size(1000, 695);
+            this.panelPhrase.TabIndex = 3;
+            // 
+            // panelPhraseView
+            // 
+            this.panelPhraseView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelPhraseView.Controls.Add(this.dgvPhrase);
+            this.panelPhraseView.Controls.Add(this.panelPhraseSearch);
+            this.panelPhraseView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPhraseView.Location = new System.Drawing.Point(0, 0);
+            this.panelPhraseView.Name = "panelPhraseView";
+            this.panelPhraseView.Size = new System.Drawing.Size(1000, 695);
+            this.panelPhraseView.TabIndex = 1;
+            // 
+            // dgvPhrase
+            // 
+            this.dgvPhrase.AllowUserToAddRows = false;
+            this.dgvPhrase.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvPhrase.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPhrase.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.dgvPhrase.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPhrase.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvPhrase.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhrase.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPhrase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPhrase.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPhrase_Serno,
+            this.dgvsPhrase_Name,
+            this.dgvPhrase_Type,
+            this.dgvPhrase_Index});
+            this.dgvPhrase.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhrase.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPhrase.DoubleBuffered = true;
+            this.dgvPhrase.EnableHeadersVisualStyles = false;
+            this.dgvPhrase.HeaderBgColor = System.Drawing.Color.Gray;
+            this.dgvPhrase.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvPhrase.Location = new System.Drawing.Point(0, 164);
+            this.dgvPhrase.Name = "dgvPhrase";
+            this.dgvPhrase.ReadOnly = true;
+            this.dgvPhrase.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhrase.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPhrase.RowHeadersVisible = false;
+            this.dgvPhrase.RowHeadersWidth = 50;
+            this.dgvPhrase.RowTemplate.Height = 24;
+            this.dgvPhrase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPhrase.Size = new System.Drawing.Size(1000, 531);
+            this.dgvPhrase.TabIndex = 0;
+            this.dgvPhrase.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhrase_CellDoubleClick);
+            // 
+            // dgvPhrase_Serno
+            // 
+            this.dgvPhrase_Serno.HeaderText = "Serno";
+            this.dgvPhrase_Serno.Name = "dgvPhrase_Serno";
+            this.dgvPhrase_Serno.ReadOnly = true;
+            this.dgvPhrase_Serno.Visible = false;
+            // 
+            // dgvsPhrase_Name
+            // 
+            this.dgvsPhrase_Name.HeaderText = "名稱";
+            this.dgvsPhrase_Name.Name = "dgvsPhrase_Name";
+            this.dgvsPhrase_Name.ReadOnly = true;
+            this.dgvsPhrase_Name.Width = 400;
+            // 
+            // dgvPhrase_Type
+            // 
+            this.dgvPhrase_Type.HeaderText = "類別";
+            this.dgvPhrase_Type.Name = "dgvPhrase_Type";
+            this.dgvPhrase_Type.ReadOnly = true;
+            this.dgvPhrase_Type.Width = 400;
+            // 
+            // dgvPhrase_Index
+            // 
+            this.dgvPhrase_Index.HeaderText = "順序";
+            this.dgvPhrase_Index.Name = "dgvPhrase_Index";
+            this.dgvPhrase_Index.ReadOnly = true;
+            this.dgvPhrase_Index.Width = 200;
+            // 
+            // panelPhraseSearch
+            // 
+            this.panelPhraseSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panelPhraseSearch.Controls.Add(this.txtPhraseType);
+            this.panelPhraseSearch.Controls.Add(this.label18);
+            this.panelPhraseSearch.Controls.Add(this.ddlPhraseCategory);
+            this.panelPhraseSearch.Controls.Add(this.label20);
+            this.panelPhraseSearch.Controls.Add(this.lblPhraseTotal);
+            this.panelPhraseSearch.Controls.Add(this.label21);
+            this.panelPhraseSearch.Controls.Add(this.txtPhraseName);
+            this.panelPhraseSearch.Controls.Add(this.btnPhraseDelete);
+            this.panelPhraseSearch.Controls.Add(this.btnPhraseSearch);
+            this.panelPhraseSearch.Controls.Add(this.btnPhraseModify);
+            this.panelPhraseSearch.Controls.Add(this.btnPhraseAdd);
+            this.panelPhraseSearch.Controls.Add(this.label22);
+            this.panelPhraseSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPhraseSearch.Location = new System.Drawing.Point(0, 0);
+            this.panelPhraseSearch.Name = "panelPhraseSearch";
+            this.panelPhraseSearch.Size = new System.Drawing.Size(1000, 164);
+            this.panelPhraseSearch.TabIndex = 0;
+            // 
+            // txtPhraseType
+            // 
+            this.txtPhraseType.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhraseType.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtPhraseType.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtPhraseType.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtPhraseType.BorderThickness = 2;
+            this.txtPhraseType.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhraseType.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhraseType.ForeColor = System.Drawing.Color.Black;
+            this.txtPhraseType.isPassword = false;
+            this.txtPhraseType.Location = new System.Drawing.Point(119, 113);
+            this.txtPhraseType.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhraseType.Name = "txtPhraseType";
+            this.txtPhraseType.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.txtPhraseType.Size = new System.Drawing.Size(241, 35);
+            this.txtPhraseType.TabIndex = 99;
+            this.txtPhraseType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(69, 121);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(43, 19);
+            this.label18.TabIndex = 98;
+            this.label18.Text = "類別:";
+            // 
+            // ddlPhraseCategory
+            // 
+            this.ddlPhraseCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ddlPhraseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ddlPhraseCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlPhraseCategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ddlPhraseCategory.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ddlPhraseCategory.ForeColor = System.Drawing.Color.DimGray;
+            this.ddlPhraseCategory.FormattingEnabled = true;
+            this.ddlPhraseCategory.Location = new System.Drawing.Point(119, 19);
+            this.ddlPhraseCategory.Name = "ddlPhraseCategory";
+            this.ddlPhraseCategory.Size = new System.Drawing.Size(241, 27);
+            this.ddlPhraseCategory.TabIndex = 97;
+            this.ddlPhraseCategory.SelectedIndexChanged += new System.EventHandler(this.ddlPhraseCategory_SelectedIndexChanged);
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(39, 22);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(73, 19);
+            this.label20.TabIndex = 96;
+            this.label20.Text = "片語類別:";
+            // 
+            // lblPhraseTotal
+            // 
+            this.lblPhraseTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPhraseTotal.AutoSize = true;
+            this.lblPhraseTotal.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhraseTotal.ForeColor = System.Drawing.Color.Black;
+            this.lblPhraseTotal.Location = new System.Drawing.Point(557, 132);
+            this.lblPhraseTotal.Name = "lblPhraseTotal";
+            this.lblPhraseTotal.Size = new System.Drawing.Size(46, 19);
+            this.lblPhraseTotal.TabIndex = 95;
+            this.lblPhraseTotal.Text = "Total";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(493, 132);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(58, 19);
+            this.label21.TabIndex = 94;
+            this.label21.Text = "總筆數:";
+            // 
+            // txtPhraseName
+            // 
+            this.txtPhraseName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhraseName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtPhraseName.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtPhraseName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtPhraseName.BorderThickness = 2;
+            this.txtPhraseName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhraseName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhraseName.ForeColor = System.Drawing.Color.Black;
+            this.txtPhraseName.isPassword = false;
+            this.txtPhraseName.Location = new System.Drawing.Point(119, 64);
+            this.txtPhraseName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhraseName.Name = "txtPhraseName";
+            this.txtPhraseName.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.txtPhraseName.Size = new System.Drawing.Size(241, 35);
+            this.txtPhraseName.TabIndex = 47;
+            this.txtPhraseName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnPhraseDelete
+            // 
+            this.btnPhraseDelete.ActiveBorderThickness = 1;
+            this.btnPhraseDelete.ActiveCornerRadius = 30;
+            this.btnPhraseDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnPhraseDelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPhraseDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnPhraseDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnPhraseDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseDelete.BackgroundImage")));
+            this.btnPhraseDelete.ButtonText = "刪 除";
+            this.btnPhraseDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhraseDelete.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
+            this.btnPhraseDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPhraseDelete.IdleBorderThickness = 1;
+            this.btnPhraseDelete.IdleCornerRadius = 30;
+            this.btnPhraseDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnPhraseDelete.IdleForecolor = System.Drawing.Color.White;
+            this.btnPhraseDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnPhraseDelete.Location = new System.Drawing.Point(907, 120);
+            this.btnPhraseDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPhraseDelete.Name = "btnPhraseDelete";
+            this.btnPhraseDelete.Size = new System.Drawing.Size(80, 42);
+            this.btnPhraseDelete.TabIndex = 46;
+            this.btnPhraseDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPhraseDelete.Click += new System.EventHandler(this.btnPhraseDelete_Click);
+            // 
+            // btnPhraseSearch
+            // 
+            this.btnPhraseSearch.ActiveBorderThickness = 1;
+            this.btnPhraseSearch.ActiveCornerRadius = 30;
+            this.btnPhraseSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnPhraseSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPhraseSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnPhraseSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnPhraseSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseSearch.BackgroundImage")));
+            this.btnPhraseSearch.ButtonText = "查 詢";
+            this.btnPhraseSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhraseSearch.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
+            this.btnPhraseSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPhraseSearch.IdleBorderThickness = 1;
+            this.btnPhraseSearch.IdleCornerRadius = 30;
+            this.btnPhraseSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnPhraseSearch.IdleForecolor = System.Drawing.Color.White;
+            this.btnPhraseSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnPhraseSearch.Location = new System.Drawing.Point(641, 120);
+            this.btnPhraseSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPhraseSearch.Name = "btnPhraseSearch";
+            this.btnPhraseSearch.Size = new System.Drawing.Size(80, 42);
+            this.btnPhraseSearch.TabIndex = 45;
+            this.btnPhraseSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPhraseSearch.Click += new System.EventHandler(this.btnPhraseSearch_Click);
+            // 
+            // btnPhraseModify
+            // 
+            this.btnPhraseModify.ActiveBorderThickness = 1;
+            this.btnPhraseModify.ActiveCornerRadius = 30;
+            this.btnPhraseModify.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
+            this.btnPhraseModify.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPhraseModify.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
+            this.btnPhraseModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnPhraseModify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseModify.BackgroundImage")));
+            this.btnPhraseModify.ButtonText = "修 改";
+            this.btnPhraseModify.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhraseModify.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
+            this.btnPhraseModify.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPhraseModify.IdleBorderThickness = 1;
+            this.btnPhraseModify.IdleCornerRadius = 30;
+            this.btnPhraseModify.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
+            this.btnPhraseModify.IdleForecolor = System.Drawing.Color.White;
+            this.btnPhraseModify.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
+            this.btnPhraseModify.Location = new System.Drawing.Point(819, 120);
+            this.btnPhraseModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPhraseModify.Name = "btnPhraseModify";
+            this.btnPhraseModify.Size = new System.Drawing.Size(80, 42);
+            this.btnPhraseModify.TabIndex = 44;
+            this.btnPhraseModify.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPhraseModify.Click += new System.EventHandler(this.btnPhraseModify_Click);
+            // 
+            // btnPhraseAdd
+            // 
+            this.btnPhraseAdd.ActiveBorderThickness = 1;
+            this.btnPhraseAdd.ActiveCornerRadius = 30;
+            this.btnPhraseAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
+            this.btnPhraseAdd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPhraseAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
+            this.btnPhraseAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnPhraseAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseAdd.BackgroundImage")));
+            this.btnPhraseAdd.ButtonText = "新 增";
+            this.btnPhraseAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhraseAdd.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
+            this.btnPhraseAdd.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPhraseAdd.IdleBorderThickness = 1;
+            this.btnPhraseAdd.IdleCornerRadius = 30;
+            this.btnPhraseAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
+            this.btnPhraseAdd.IdleForecolor = System.Drawing.Color.White;
+            this.btnPhraseAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
+            this.btnPhraseAdd.Location = new System.Drawing.Point(730, 120);
+            this.btnPhraseAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnPhraseAdd.Name = "btnPhraseAdd";
+            this.btnPhraseAdd.Size = new System.Drawing.Size(80, 42);
+            this.btnPhraseAdd.TabIndex = 43;
+            this.btnPhraseAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPhraseAdd.Click += new System.EventHandler(this.btnPhraseAdd_Click);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(69, 72);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(43, 19);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "名稱:";
+            // 
             // panelStats
             // 
             this.panelStats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -272,138 +650,6 @@
             this.panelStats.Name = "panelStats";
             this.panelStats.Size = new System.Drawing.Size(5, 45);
             this.panelStats.TabIndex = 1;
-            // 
-            // btnBackUp
-            // 
-            this.btnBackUp.FlatAppearance.BorderSize = 0;
-            this.btnBackUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackUp.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnBackUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnBackUp.Image = ((System.Drawing.Image)(resources.GetObject("btnBackUp.Image")));
-            this.btnBackUp.Location = new System.Drawing.Point(0, 291);
-            this.btnBackUp.Name = "btnBackUp";
-            this.btnBackUp.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnBackUp.Size = new System.Drawing.Size(200, 45);
-            this.btnBackUp.TabIndex = 39;
-            this.btnBackUp.Text = "  備份資料";
-            this.btnBackUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBackUp.UseVisualStyleBackColor = true;
-            this.btnBackUp.Click += new System.EventHandler(this.btnBackUp_Click);
-            // 
-            // btnInventory
-            // 
-            this.btnInventory.FlatAppearance.BorderSize = 0;
-            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventory.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
-            this.btnInventory.Location = new System.Drawing.Point(0, 151);
-            this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnInventory.Size = new System.Drawing.Size(200, 45);
-            this.btnInventory.TabIndex = 38;
-            this.btnInventory.Text = "  進銷存專區";
-            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInventory.UseVisualStyleBackColor = true;
-            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
-            // 
-            // btnPhrase
-            // 
-            this.btnPhrase.FlatAppearance.BorderSize = 0;
-            this.btnPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhrase.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPhrase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnPhrase.Image = ((System.Drawing.Image)(resources.GetObject("btnPhrase.Image")));
-            this.btnPhrase.Location = new System.Drawing.Point(0, 221);
-            this.btnPhrase.Name = "btnPhrase";
-            this.btnPhrase.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnPhrase.Size = new System.Drawing.Size(200, 45);
-            this.btnPhrase.TabIndex = 2;
-            this.btnPhrase.Text = "  交易參數";
-            this.btnPhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhrase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPhrase.UseVisualStyleBackColor = true;
-            this.btnPhrase.Click += new System.EventHandler(this.btnPhrase_Click);
-            // 
-            // btnTrade
-            // 
-            this.btnTrade.FlatAppearance.BorderSize = 0;
-            this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrade.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnTrade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnTrade.Image = ((System.Drawing.Image)(resources.GetObject("btnTrade.Image")));
-            this.btnTrade.Location = new System.Drawing.Point(0, 81);
-            this.btnTrade.Name = "btnTrade";
-            this.btnTrade.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnTrade.Size = new System.Drawing.Size(200, 45);
-            this.btnTrade.TabIndex = 1;
-            this.btnTrade.Text = "  行銷專區";
-            this.btnTrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTrade.UseVisualStyleBackColor = true;
-            this.btnTrade.Click += new System.EventHandler(this.btnTrade_Click);
-            // 
-            // btnMember
-            // 
-            this.btnMember.FlatAppearance.BorderSize = 0;
-            this.btnMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMember.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btnMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMember.Image")));
-            this.btnMember.Location = new System.Drawing.Point(0, 11);
-            this.btnMember.Name = "btnMember";
-            this.btnMember.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnMember.Size = new System.Drawing.Size(200, 45);
-            this.btnMember.TabIndex = 0;
-            this.btnMember.Text = "  會員專區";
-            this.btnMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMember.UseVisualStyleBackColor = true;
-            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
-            // 
-            // panelLeftTop
-            // 
-            this.panelLeftTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(63)))));
-            this.panelLeftTop.Controls.Add(this.label8);
-            this.panelLeftTop.Controls.Add(this.pictureBox1);
-            this.panelLeftTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLeftTop.Location = new System.Drawing.Point(0, 0);
-            this.panelLeftTop.Name = "panelLeftTop";
-            this.panelLeftTop.Size = new System.Drawing.Size(200, 164);
-            this.panelLeftTop.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("微軟正黑體", 17F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.label8.Location = new System.Drawing.Point(48, 112);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 29);
-            this.label8.TabIndex = 36;
-            this.label8.Text = "後台系統";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(68, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelMask
-            // 
-            this.panelMask.BackColor = System.Drawing.Color.Silver;
-            this.panelMask.Location = new System.Drawing.Point(0, 53);
-            this.panelMask.Name = "panelMask";
-            this.panelMask.Size = new System.Drawing.Size(1000, 695);
-            this.panelMask.TabIndex = 1;
-            this.panelMask.Visible = false;
             // 
             // panelMember
             // 
@@ -428,20 +674,20 @@
             // 
             this.dgvMember.AllowUserToAddRows = false;
             this.dgvMember.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle81;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMember.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.dgvMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMember.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle82.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle82.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle82.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle82;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvMember_Serno,
@@ -453,14 +699,14 @@
             this.dgvMember_InsertDTTM,
             this.dgvMember_ModifyDTTM});
             this.dgvMember.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle83.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMember.DefaultCellStyle = dataGridViewCellStyle83;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMember.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvMember.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMember.DoubleBuffered = true;
             this.dgvMember.EnableHeadersVisualStyles = false;
@@ -470,14 +716,14 @@
             this.dgvMember.Name = "dgvMember";
             this.dgvMember.ReadOnly = true;
             this.dgvMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle84.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle84.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle84.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle84.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMember.RowHeadersDefaultCellStyle = dataGridViewCellStyle84;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMember.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvMember.RowHeadersVisible = false;
             this.dgvMember.RowHeadersWidth = 50;
             this.dgvMember.RowTemplate.Height = 24;
@@ -485,6 +731,7 @@
             this.dgvMember.Size = new System.Drawing.Size(1000, 497);
             this.dgvMember.TabIndex = 0;
             this.dgvMember.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMember_CellDoubleClick);
+            this.dgvMember.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMember_ColumnHeaderMouseClick);
             // 
             // dgvMember_Serno
             // 
@@ -544,6 +791,11 @@
             // panelMemberSearch
             // 
             this.panelMemberSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panelMemberSearch.Controls.Add(this.ddlMemberPage);
+            this.panelMemberSearch.Controls.Add(this.label35);
+            this.panelMemberSearch.Controls.Add(this.label37);
+            this.panelMemberSearch.Controls.Add(this.btnMemberRight);
+            this.panelMemberSearch.Controls.Add(this.btnMemberLeft);
             this.panelMemberSearch.Controls.Add(this.lblMemberTotal);
             this.panelMemberSearch.Controls.Add(this.label19);
             this.panelMemberSearch.Controls.Add(this.txtMemberName);
@@ -570,6 +822,74 @@
             this.panelMemberSearch.Size = new System.Drawing.Size(1000, 198);
             this.panelMemberSearch.TabIndex = 0;
             // 
+            // ddlMemberPage
+            // 
+            this.ddlMemberPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ddlMemberPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ddlMemberPage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlMemberPage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ddlMemberPage.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ddlMemberPage.ForeColor = System.Drawing.Color.DimGray;
+            this.ddlMemberPage.FormattingEnabled = true;
+            this.ddlMemberPage.Items.AddRange(new object[] {
+            "劉居政",
+            "劉奇信"});
+            this.ddlMemberPage.Location = new System.Drawing.Point(60, 167);
+            this.ddlMemberPage.Name = "ddlMemberPage";
+            this.ddlMemberPage.Size = new System.Drawing.Size(59, 27);
+            this.ddlMemberPage.TabIndex = 131;
+            this.ddlMemberPage.SelectedIndexChanged += new System.EventHandler(this.ddlMemberPage_SelectedIndexChanged);
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(119, 171);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(24, 19);
+            this.label35.TabIndex = 130;
+            this.label35.Text = "頁";
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(36, 171);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(24, 19);
+            this.label37.TabIndex = 129;
+            this.label37.Text = "第";
+            // 
+            // btnMemberRight
+            // 
+            this.btnMemberRight.Image = ((System.Drawing.Image)(resources.GetObject("btnMemberRight.Image")));
+            this.btnMemberRight.Location = new System.Drawing.Point(143, 168);
+            this.btnMemberRight.Name = "btnMemberRight";
+            this.btnMemberRight.Size = new System.Drawing.Size(24, 24);
+            this.btnMemberRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMemberRight.TabIndex = 128;
+            this.btnMemberRight.TabStop = false;
+            this.btnMemberRight.Click += new System.EventHandler(this.btnMemberRight_Click);
+            // 
+            // btnMemberLeft
+            // 
+            this.btnMemberLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnMemberLeft.Image")));
+            this.btnMemberLeft.Location = new System.Drawing.Point(12, 168);
+            this.btnMemberLeft.Name = "btnMemberLeft";
+            this.btnMemberLeft.Size = new System.Drawing.Size(24, 24);
+            this.btnMemberLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMemberLeft.TabIndex = 127;
+            this.btnMemberLeft.TabStop = false;
+            this.btnMemberLeft.Click += new System.EventHandler(this.btnMemberLeft_Click);
+            // 
             // lblMemberTotal
             // 
             this.lblMemberTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -578,7 +898,7 @@
             this.lblMemberTotal.AutoSize = true;
             this.lblMemberTotal.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMemberTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblMemberTotal.Location = new System.Drawing.Point(544, 157);
+            this.lblMemberTotal.Location = new System.Drawing.Point(245, 171);
             this.lblMemberTotal.Name = "lblMemberTotal";
             this.lblMemberTotal.Size = new System.Drawing.Size(46, 19);
             this.lblMemberTotal.TabIndex = 95;
@@ -592,7 +912,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(480, 157);
+            this.label19.Location = new System.Drawing.Point(181, 171);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(58, 19);
             this.label19.TabIndex = 94;
@@ -637,7 +957,7 @@
             this.btnMemberDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
             this.btnMemberDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnMemberDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnMemberDelete.Location = new System.Drawing.Point(894, 145);
+            this.btnMemberDelete.Location = new System.Drawing.Point(894, 156);
             this.btnMemberDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMemberDelete.Name = "btnMemberDelete";
             this.btnMemberDelete.Size = new System.Drawing.Size(80, 42);
@@ -663,7 +983,7 @@
             this.btnMemberSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
             this.btnMemberSearch.IdleForecolor = System.Drawing.Color.White;
             this.btnMemberSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnMemberSearch.Location = new System.Drawing.Point(628, 145);
+            this.btnMemberSearch.Location = new System.Drawing.Point(628, 156);
             this.btnMemberSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMemberSearch.Name = "btnMemberSearch";
             this.btnMemberSearch.Size = new System.Drawing.Size(80, 42);
@@ -689,7 +1009,7 @@
             this.btnMemberModify.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
             this.btnMemberModify.IdleForecolor = System.Drawing.Color.White;
             this.btnMemberModify.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnMemberModify.Location = new System.Drawing.Point(806, 145);
+            this.btnMemberModify.Location = new System.Drawing.Point(806, 156);
             this.btnMemberModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMemberModify.Name = "btnMemberModify";
             this.btnMemberModify.Size = new System.Drawing.Size(80, 42);
@@ -715,7 +1035,7 @@
             this.btnMemberAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnMemberAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnMemberAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnMemberAdd.Location = new System.Drawing.Point(717, 145);
+            this.btnMemberAdd.Location = new System.Drawing.Point(717, 156);
             this.btnMemberAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnMemberAdd.Name = "btnMemberAdd";
             this.btnMemberAdd.Size = new System.Drawing.Size(80, 42);
@@ -918,121 +1238,137 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "客戶姓名:";
             // 
-            // bunifuElipse1
+            // panelMask
             // 
-            this.bunifuElipse1.ElipseRadius = 15;
-            this.bunifuElipse1.TargetControl = this;
+            this.panelMask.BackColor = System.Drawing.Color.Silver;
+            this.panelMask.Location = new System.Drawing.Point(0, 53);
+            this.panelMask.Name = "panelMask";
+            this.panelMask.Size = new System.Drawing.Size(1000, 695);
+            this.panelMask.TabIndex = 1;
+            this.panelMask.Visible = false;
             // 
-            // panelBar
+            // btnBackUp
             // 
-            this.panelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panelBar.Controls.Add(this.lblUser);
-            this.panelBar.Controls.Add(this.label16);
-            this.panelBar.Controls.Add(this.btnClose);
-            this.panelBar.Controls.Add(this.pictureBox2);
-            this.panelBar.Controls.Add(this.lblBarTitle);
-            this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBar.Location = new System.Drawing.Point(0, 0);
-            this.panelBar.Name = "panelBar";
-            this.panelBar.Size = new System.Drawing.Size(1000, 53);
-            this.panelBar.TabIndex = 1;
-            this.panelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseDown);
-            this.panelBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseMove);
-            this.panelBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseUp);
+            this.btnBackUp.FlatAppearance.BorderSize = 0;
+            this.btnBackUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackUp.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBackUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnBackUp.Image = ((System.Drawing.Image)(resources.GetObject("btnBackUp.Image")));
+            this.btnBackUp.Location = new System.Drawing.Point(0, 291);
+            this.btnBackUp.Name = "btnBackUp";
+            this.btnBackUp.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnBackUp.Size = new System.Drawing.Size(200, 45);
+            this.btnBackUp.TabIndex = 39;
+            this.btnBackUp.Text = "  備份資料";
+            this.btnBackUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBackUp.UseVisualStyleBackColor = true;
+            this.btnBackUp.Click += new System.EventHandler(this.btnBackUp_Click);
             // 
-            // lblUser
+            // btnInventory
             // 
-            this.lblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnInventory.FlatAppearance.BorderSize = 0;
+            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventory.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
+            this.btnInventory.Location = new System.Drawing.Point(0, 151);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnInventory.Size = new System.Drawing.Size(200, 45);
+            this.btnInventory.TabIndex = 38;
+            this.btnInventory.Text = "  進銷存專區";
+            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInventory.UseVisualStyleBackColor = true;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
+            // btnPhrase
+            // 
+            this.btnPhrase.FlatAppearance.BorderSize = 0;
+            this.btnPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhrase.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPhrase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnPhrase.Image = ((System.Drawing.Image)(resources.GetObject("btnPhrase.Image")));
+            this.btnPhrase.Location = new System.Drawing.Point(0, 221);
+            this.btnPhrase.Name = "btnPhrase";
+            this.btnPhrase.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnPhrase.Size = new System.Drawing.Size(200, 45);
+            this.btnPhrase.TabIndex = 2;
+            this.btnPhrase.Text = "  交易參數";
+            this.btnPhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhrase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPhrase.UseVisualStyleBackColor = true;
+            this.btnPhrase.Click += new System.EventHandler(this.btnPhrase_Click);
+            // 
+            // btnTrade
+            // 
+            this.btnTrade.FlatAppearance.BorderSize = 0;
+            this.btnTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrade.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnTrade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnTrade.Image = ((System.Drawing.Image)(resources.GetObject("btnTrade.Image")));
+            this.btnTrade.Location = new System.Drawing.Point(0, 81);
+            this.btnTrade.Name = "btnTrade";
+            this.btnTrade.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnTrade.Size = new System.Drawing.Size(200, 45);
+            this.btnTrade.TabIndex = 1;
+            this.btnTrade.Text = "  行銷專區";
+            this.btnTrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrade.UseVisualStyleBackColor = true;
+            this.btnTrade.Click += new System.EventHandler(this.btnTrade_Click);
+            // 
+            // btnMember
+            // 
+            this.btnMember.FlatAppearance.BorderSize = 0;
+            this.btnMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMember.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMember.Image")));
+            this.btnMember.Location = new System.Drawing.Point(0, 11);
+            this.btnMember.Name = "btnMember";
+            this.btnMember.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnMember.Size = new System.Drawing.Size(200, 45);
+            this.btnMember.TabIndex = 0;
+            this.btnMember.Text = "  會員專區";
+            this.btnMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMember.UseVisualStyleBackColor = true;
+            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
+            // 
+            // panelLeftTop
+            // 
+            this.panelLeftTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(63)))));
+            this.panelLeftTop.Controls.Add(this.label8);
+            this.panelLeftTop.Controls.Add(this.pictureBox1);
+            this.panelLeftTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLeftTop.Location = new System.Drawing.Point(0, 0);
+            this.panelLeftTop.Name = "panelLeftTop";
+            this.panelLeftTop.Size = new System.Drawing.Size(200, 164);
+            this.panelLeftTop.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUser.AutoSize = true;
-            this.lblUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblUser.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.ForeColor = System.Drawing.Color.Black;
-            this.lblUser.Location = new System.Drawing.Point(820, 20);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(60, 19);
-            this.lblUser.TabIndex = 92;
-            this.lblUser.Text = "lblUser";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("微軟正黑體", 17F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.label8.Location = new System.Drawing.Point(48, 112);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 29);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "後台系統";
             // 
-            // label16
+            // pictureBox1
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(756, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 19);
-            this.label16.TabIndex = 91;
-            this.label16.Text = "使用者:";
-            // 
-            // btnClose
-            // 
-            this.btnClose.ActiveBorderThickness = 1;
-            this.btnClose.ActiveCornerRadius = 30;
-            this.btnClose.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnClose.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
-            this.btnClose.ButtonText = "離 開";
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnClose.IdleBorderThickness = 1;
-            this.btnClose.IdleCornerRadius = 30;
-            this.btnClose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnClose.IdleForecolor = System.Drawing.Color.White;
-            this.btnClose.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnClose.Location = new System.Drawing.Point(923, 8);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(63, 41);
-            this.btnClose.TabIndex = 39;
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(608, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(309, 53);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 37;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblBarTitle
-            // 
-            this.lblBarTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBarTitle.AutoSize = true;
-            this.lblBarTitle.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold);
-            this.lblBarTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblBarTitle.Location = new System.Drawing.Point(18, 16);
-            this.lblBarTitle.Name = "lblBarTitle";
-            this.lblBarTitle.Size = new System.Drawing.Size(86, 24);
-            this.lblBarTitle.TabIndex = 37;
-            this.lblBarTitle.Text = "會員專區";
-            // 
-            // panelRight
-            // 
-            this.panelRight.Controls.Add(this.panelInventory);
-            this.panelRight.Controls.Add(this.panelMask);
-            this.panelRight.Controls.Add(this.panelSale);
-            this.panelRight.Controls.Add(this.panelPhrase);
-            this.panelRight.Controls.Add(this.panelMember);
-            this.panelRight.Controls.Add(this.panelBar);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(200, 0);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(1000, 750);
-            this.panelRight.TabIndex = 2;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(68, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelInventory
             // 
@@ -1057,38 +1393,38 @@
             // 
             this.dgvInventory.AllowUserToAddRows = false;
             this.dgvInventory.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvInventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle85;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvInventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvInventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.dgvInventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvInventory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvInventory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle86.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle86.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle86.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle86;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvInventory_Serno,
-            this.dgvInventory__Name,
-            this.dgvInventory__Count,
+            this.dgvInventory_Name,
+            this.dgvInventory_Count,
             this.dgvInventory_INAMT,
             this.dgvInventory_OUTAMT,
             this.dgvInventory_POSTAMT,
             this.dgvInventory_RETURNAMT});
             this.dgvInventory.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle87.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle87.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle87.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInventory.DefaultCellStyle = dataGridViewCellStyle87;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInventory.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvInventory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInventory.DoubleBuffered = true;
             this.dgvInventory.EnableHeadersVisualStyles = false;
@@ -1098,14 +1434,14 @@
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle88.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle88.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle88.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle88.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle88;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowHeadersWidth = 50;
             this.dgvInventory.RowTemplate.Height = 24;
@@ -1113,59 +1449,16 @@
             this.dgvInventory.Size = new System.Drawing.Size(1000, 427);
             this.dgvInventory.TabIndex = 0;
             this.dgvInventory.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventory_CellDoubleClick);
-            // 
-            // dgvInventory_Serno
-            // 
-            this.dgvInventory_Serno.HeaderText = "Serno";
-            this.dgvInventory_Serno.Name = "dgvInventory_Serno";
-            this.dgvInventory_Serno.ReadOnly = true;
-            this.dgvInventory_Serno.Visible = false;
-            // 
-            // dgvInventory__Name
-            // 
-            this.dgvInventory__Name.HeaderText = "商品機型";
-            this.dgvInventory__Name.Name = "dgvInventory__Name";
-            this.dgvInventory__Name.ReadOnly = true;
-            this.dgvInventory__Name.Width = 300;
-            // 
-            // dgvInventory__Count
-            // 
-            this.dgvInventory__Count.HeaderText = "數量";
-            this.dgvInventory__Count.Name = "dgvInventory__Count";
-            this.dgvInventory__Count.ReadOnly = true;
-            this.dgvInventory__Count.Width = 150;
-            // 
-            // dgvInventory_INAMT
-            // 
-            this.dgvInventory_INAMT.HeaderText = "進貨總金額";
-            this.dgvInventory_INAMT.Name = "dgvInventory_INAMT";
-            this.dgvInventory_INAMT.ReadOnly = true;
-            this.dgvInventory_INAMT.Width = 200;
-            // 
-            // dgvInventory_OUTAMT
-            // 
-            this.dgvInventory_OUTAMT.HeaderText = "出貨總金額";
-            this.dgvInventory_OUTAMT.Name = "dgvInventory_OUTAMT";
-            this.dgvInventory_OUTAMT.ReadOnly = true;
-            this.dgvInventory_OUTAMT.Width = 200;
-            // 
-            // dgvInventory_POSTAMT
-            // 
-            this.dgvInventory_POSTAMT.HeaderText = "寄庫總金額";
-            this.dgvInventory_POSTAMT.Name = "dgvInventory_POSTAMT";
-            this.dgvInventory_POSTAMT.ReadOnly = true;
-            this.dgvInventory_POSTAMT.Width = 200;
-            // 
-            // dgvInventory_RETURNAMT
-            // 
-            this.dgvInventory_RETURNAMT.HeaderText = "退貨總金額";
-            this.dgvInventory_RETURNAMT.Name = "dgvInventory_RETURNAMT";
-            this.dgvInventory_RETURNAMT.ReadOnly = true;
-            this.dgvInventory_RETURNAMT.Width = 200;
+            this.dgvInventory.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvInventory_ColumnHeaderMouseClick);
             // 
             // panelInventorySearch
             // 
             this.panelInventorySearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panelInventorySearch.Controls.Add(this.ddlInventoryPage);
+            this.panelInventorySearch.Controls.Add(this.label41);
+            this.panelInventorySearch.Controls.Add(this.label42);
+            this.panelInventorySearch.Controls.Add(this.btnInventoryRight);
+            this.panelInventorySearch.Controls.Add(this.btnInventoryLeft);
             this.panelInventorySearch.Controls.Add(this.lblInventoryPOSTAMT);
             this.panelInventorySearch.Controls.Add(this.label36);
             this.panelInventorySearch.Controls.Add(this.lblInventoryRETURNAMT);
@@ -1212,6 +1505,74 @@
             this.panelInventorySearch.Name = "panelInventorySearch";
             this.panelInventorySearch.Size = new System.Drawing.Size(1000, 268);
             this.panelInventorySearch.TabIndex = 0;
+            // 
+            // ddlInventoryPage
+            // 
+            this.ddlInventoryPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ddlInventoryPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ddlInventoryPage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlInventoryPage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ddlInventoryPage.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ddlInventoryPage.ForeColor = System.Drawing.Color.DimGray;
+            this.ddlInventoryPage.FormattingEnabled = true;
+            this.ddlInventoryPage.Items.AddRange(new object[] {
+            "劉居政",
+            "劉奇信"});
+            this.ddlInventoryPage.Location = new System.Drawing.Point(58, 235);
+            this.ddlInventoryPage.Name = "ddlInventoryPage";
+            this.ddlInventoryPage.Size = new System.Drawing.Size(59, 27);
+            this.ddlInventoryPage.TabIndex = 151;
+            this.ddlInventoryPage.SelectedIndexChanged += new System.EventHandler(this.ddlInventoryPage_SelectedIndexChanged);
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(117, 239);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(24, 19);
+            this.label41.TabIndex = 150;
+            this.label41.Text = "頁";
+            // 
+            // label42
+            // 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Black;
+            this.label42.Location = new System.Drawing.Point(34, 239);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(24, 19);
+            this.label42.TabIndex = 149;
+            this.label42.Text = "第";
+            // 
+            // btnInventoryRight
+            // 
+            this.btnInventoryRight.Image = ((System.Drawing.Image)(resources.GetObject("btnInventoryRight.Image")));
+            this.btnInventoryRight.Location = new System.Drawing.Point(141, 236);
+            this.btnInventoryRight.Name = "btnInventoryRight";
+            this.btnInventoryRight.Size = new System.Drawing.Size(24, 24);
+            this.btnInventoryRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnInventoryRight.TabIndex = 148;
+            this.btnInventoryRight.TabStop = false;
+            this.btnInventoryRight.Click += new System.EventHandler(this.btnInventoryRight_Click);
+            // 
+            // btnInventoryLeft
+            // 
+            this.btnInventoryLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnInventoryLeft.Image")));
+            this.btnInventoryLeft.Location = new System.Drawing.Point(10, 236);
+            this.btnInventoryLeft.Name = "btnInventoryLeft";
+            this.btnInventoryLeft.Size = new System.Drawing.Size(24, 24);
+            this.btnInventoryLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnInventoryLeft.TabIndex = 147;
+            this.btnInventoryLeft.TabStop = false;
+            this.btnInventoryLeft.Click += new System.EventHandler(this.btnInventoryLeft_Click);
             // 
             // lblInventoryPOSTAMT
             // 
@@ -1399,7 +1760,7 @@
             this.btnInventoryReturnAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnInventoryReturnAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryReturnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnInventoryReturnAdd.Location = new System.Drawing.Point(896, 221);
+            this.btnInventoryReturnAdd.Location = new System.Drawing.Point(896, 224);
             this.btnInventoryReturnAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnInventoryReturnAdd.Name = "btnInventoryReturnAdd";
             this.btnInventoryReturnAdd.Size = new System.Drawing.Size(80, 42);
@@ -1425,7 +1786,7 @@
             this.btnInventoryPostAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnInventoryPostAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryPostAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnInventoryPostAdd.Location = new System.Drawing.Point(808, 221);
+            this.btnInventoryPostAdd.Location = new System.Drawing.Point(808, 224);
             this.btnInventoryPostAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnInventoryPostAdd.Name = "btnInventoryPostAdd";
             this.btnInventoryPostAdd.Size = new System.Drawing.Size(80, 42);
@@ -1451,7 +1812,7 @@
             this.btnInventoryExportAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnInventoryExportAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryExportAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnInventoryExportAdd.Location = new System.Drawing.Point(720, 221);
+            this.btnInventoryExportAdd.Location = new System.Drawing.Point(720, 224);
             this.btnInventoryExportAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnInventoryExportAdd.Name = "btnInventoryExportAdd";
             this.btnInventoryExportAdd.Size = new System.Drawing.Size(80, 42);
@@ -1633,7 +1994,7 @@
             this.lblInventoryTotal.AutoSize = true;
             this.lblInventoryTotal.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInventoryTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblInventoryTotal.Location = new System.Drawing.Point(102, 231);
+            this.lblInventoryTotal.Location = new System.Drawing.Point(250, 239);
             this.lblInventoryTotal.Name = "lblInventoryTotal";
             this.lblInventoryTotal.Size = new System.Drawing.Size(46, 19);
             this.lblInventoryTotal.TabIndex = 95;
@@ -1647,7 +2008,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(34, 231);
+            this.label28.Location = new System.Drawing.Point(182, 239);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(58, 19);
             this.label28.TabIndex = 94;
@@ -1671,7 +2032,7 @@
             this.btnInventoryDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
             this.btnInventoryDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnInventoryDelete.Location = new System.Drawing.Point(544, 221);
+            this.btnInventoryDelete.Location = new System.Drawing.Point(544, 224);
             this.btnInventoryDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInventoryDelete.Name = "btnInventoryDelete";
             this.btnInventoryDelete.Size = new System.Drawing.Size(80, 42);
@@ -1697,7 +2058,7 @@
             this.btnInventorySearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
             this.btnInventorySearch.IdleForecolor = System.Drawing.Color.White;
             this.btnInventorySearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnInventorySearch.Location = new System.Drawing.Point(368, 221);
+            this.btnInventorySearch.Location = new System.Drawing.Point(368, 224);
             this.btnInventorySearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInventorySearch.Name = "btnInventorySearch";
             this.btnInventorySearch.Size = new System.Drawing.Size(80, 42);
@@ -1723,7 +2084,7 @@
             this.btnInventoryModify.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
             this.btnInventoryModify.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryModify.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnInventoryModify.Location = new System.Drawing.Point(456, 221);
+            this.btnInventoryModify.Location = new System.Drawing.Point(456, 224);
             this.btnInventoryModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInventoryModify.Name = "btnInventoryModify";
             this.btnInventoryModify.Size = new System.Drawing.Size(80, 42);
@@ -1749,7 +2110,7 @@
             this.btnInventoryImportAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnInventoryImportAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnInventoryImportAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnInventoryImportAdd.Location = new System.Drawing.Point(632, 221);
+            this.btnInventoryImportAdd.Location = new System.Drawing.Point(632, 224);
             this.btnInventoryImportAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnInventoryImportAdd.Name = "btnInventoryImportAdd";
             this.btnInventoryImportAdd.Size = new System.Drawing.Size(80, 42);
@@ -1896,6 +2257,122 @@
             this.label32.TabIndex = 13;
             this.label32.Text = "商品條碼:";
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // panelBar
+            // 
+            this.panelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panelBar.Controls.Add(this.lblUser);
+            this.panelBar.Controls.Add(this.label16);
+            this.panelBar.Controls.Add(this.btnClose);
+            this.panelBar.Controls.Add(this.pictureBox2);
+            this.panelBar.Controls.Add(this.lblBarTitle);
+            this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBar.Location = new System.Drawing.Point(0, 0);
+            this.panelBar.Name = "panelBar";
+            this.panelBar.Size = new System.Drawing.Size(1000, 53);
+            this.panelBar.TabIndex = 1;
+            this.panelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseDown);
+            this.panelBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseMove);
+            this.panelBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseUp);
+            // 
+            // lblUser
+            // 
+            this.lblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUser.AutoSize = true;
+            this.lblUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblUser.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.Black;
+            this.lblUser.Location = new System.Drawing.Point(820, 20);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(60, 19);
+            this.lblUser.TabIndex = 92;
+            this.lblUser.Text = "lblUser";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(756, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(58, 19);
+            this.label16.TabIndex = 91;
+            this.label16.Text = "使用者:";
+            // 
+            // btnClose
+            // 
+            this.btnClose.ActiveBorderThickness = 1;
+            this.btnClose.ActiveCornerRadius = 30;
+            this.btnClose.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnClose.ActiveForecolor = System.Drawing.Color.White;
+            this.btnClose.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
+            this.btnClose.ButtonText = "離 開";
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnClose.IdleBorderThickness = 1;
+            this.btnClose.IdleCornerRadius = 30;
+            this.btnClose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnClose.IdleForecolor = System.Drawing.Color.White;
+            this.btnClose.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
+            this.btnClose.Location = new System.Drawing.Point(923, 8);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(63, 41);
+            this.btnClose.TabIndex = 39;
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(608, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(309, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblBarTitle
+            // 
+            this.lblBarTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBarTitle.AutoSize = true;
+            this.lblBarTitle.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold);
+            this.lblBarTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblBarTitle.Location = new System.Drawing.Point(18, 16);
+            this.lblBarTitle.Name = "lblBarTitle";
+            this.lblBarTitle.Size = new System.Drawing.Size(86, 24);
+            this.lblBarTitle.TabIndex = 37;
+            this.lblBarTitle.Text = "會員專區";
+            // 
+            // panelRight
+            // 
+            this.panelRight.Controls.Add(this.panelPhrase);
+            this.panelRight.Controls.Add(this.panelInventory);
+            this.panelRight.Controls.Add(this.panelBar);
+            this.panelRight.Controls.Add(this.panelMember);
+            this.panelRight.Controls.Add(this.panelSale);
+            this.panelRight.Controls.Add(this.panelMask);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRight.Location = new System.Drawing.Point(200, 0);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(1000, 750);
+            this.panelRight.TabIndex = 2;
+            // 
             // panelSale
             // 
             this.panelSale.Controls.Add(this.panelSaleView);
@@ -1919,20 +2396,20 @@
             // 
             this.dgvSale.AllowUserToAddRows = false;
             this.dgvSale.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvSale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle89;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvSale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvSale.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.dgvSale.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSale.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvSale.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle90.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle90.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle90.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle90.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle90.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle90.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSale.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle90;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSale.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSale_Serno,
@@ -1947,14 +2424,14 @@
             this.dgvSale_DealDTTM,
             this.dgvSale_ModifyDTTM});
             this.dgvSale.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle91.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle91.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle91.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle91.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSale.DefaultCellStyle = dataGridViewCellStyle91;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSale.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSale.DoubleBuffered = true;
             this.dgvSale.EnableHeadersVisualStyles = false;
@@ -1964,14 +2441,14 @@
             this.dgvSale.Name = "dgvSale";
             this.dgvSale.ReadOnly = true;
             this.dgvSale.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle92.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle92.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle92.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle92.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle92.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSale.RowHeadersDefaultCellStyle = dataGridViewCellStyle92;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSale.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvSale.RowHeadersVisible = false;
             this.dgvSale.RowHeadersWidth = 50;
             this.dgvSale.RowTemplate.Height = 24;
@@ -1979,6 +2456,7 @@
             this.dgvSale.Size = new System.Drawing.Size(1000, 452);
             this.dgvSale.TabIndex = 0;
             this.dgvSale.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSale_CellDoubleClick);
+            this.dgvSale.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSale_ColumnHeaderMouseClick);
             // 
             // dgvSale_Serno
             // 
@@ -2054,6 +2532,11 @@
             // panelSaleSearch
             // 
             this.panelSaleSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panelSaleSearch.Controls.Add(this.ddlSalePage);
+            this.panelSaleSearch.Controls.Add(this.label39);
+            this.panelSaleSearch.Controls.Add(this.label40);
+            this.panelSaleSearch.Controls.Add(this.btnSaleRight);
+            this.panelSaleSearch.Controls.Add(this.btnSaleLeft);
             this.panelSaleSearch.Controls.Add(this.lblSaleTotalAmount);
             this.panelSaleSearch.Controls.Add(this.label24);
             this.panelSaleSearch.Controls.Add(this.txtSaleComment);
@@ -2090,6 +2573,74 @@
             this.panelSaleSearch.Size = new System.Drawing.Size(1000, 243);
             this.panelSaleSearch.TabIndex = 0;
             // 
+            // ddlSalePage
+            // 
+            this.ddlSalePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.ddlSalePage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ddlSalePage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlSalePage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ddlSalePage.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ddlSalePage.ForeColor = System.Drawing.Color.DimGray;
+            this.ddlSalePage.FormattingEnabled = true;
+            this.ddlSalePage.Items.AddRange(new object[] {
+            "劉居政",
+            "劉奇信"});
+            this.ddlSalePage.Location = new System.Drawing.Point(58, 210);
+            this.ddlSalePage.Name = "ddlSalePage";
+            this.ddlSalePage.Size = new System.Drawing.Size(59, 27);
+            this.ddlSalePage.TabIndex = 146;
+            this.ddlSalePage.SelectedIndexChanged += new System.EventHandler(this.ddlSalePage_SelectedIndexChanged);
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(117, 214);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(24, 19);
+            this.label39.TabIndex = 145;
+            this.label39.Text = "頁";
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(34, 214);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(24, 19);
+            this.label40.TabIndex = 144;
+            this.label40.Text = "第";
+            // 
+            // btnSaleRight
+            // 
+            this.btnSaleRight.Image = ((System.Drawing.Image)(resources.GetObject("btnSaleRight.Image")));
+            this.btnSaleRight.Location = new System.Drawing.Point(141, 211);
+            this.btnSaleRight.Name = "btnSaleRight";
+            this.btnSaleRight.Size = new System.Drawing.Size(24, 24);
+            this.btnSaleRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnSaleRight.TabIndex = 143;
+            this.btnSaleRight.TabStop = false;
+            this.btnSaleRight.Click += new System.EventHandler(this.btnSaleRight_Click);
+            // 
+            // btnSaleLeft
+            // 
+            this.btnSaleLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnSaleLeft.Image")));
+            this.btnSaleLeft.Location = new System.Drawing.Point(10, 211);
+            this.btnSaleLeft.Name = "btnSaleLeft";
+            this.btnSaleLeft.Size = new System.Drawing.Size(24, 24);
+            this.btnSaleLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnSaleLeft.TabIndex = 142;
+            this.btnSaleLeft.TabStop = false;
+            this.btnSaleLeft.Click += new System.EventHandler(this.btnSaleLeft_Click);
+            // 
             // lblSaleTotalAmount
             // 
             this.lblSaleTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -2098,7 +2649,7 @@
             this.lblSaleTotalAmount.AutoSize = true;
             this.lblSaleTotalAmount.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaleTotalAmount.ForeColor = System.Drawing.Color.Black;
-            this.lblSaleTotalAmount.Location = new System.Drawing.Point(293, 205);
+            this.lblSaleTotalAmount.Location = new System.Drawing.Point(293, 214);
             this.lblSaleTotalAmount.Name = "lblSaleTotalAmount";
             this.lblSaleTotalAmount.Size = new System.Drawing.Size(46, 19);
             this.lblSaleTotalAmount.TabIndex = 97;
@@ -2112,7 +2663,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(455, 205);
+            this.label24.Location = new System.Drawing.Point(455, 214);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(58, 19);
             this.label24.TabIndex = 96;
@@ -2161,7 +2712,7 @@
             this.lblSaleTotal.AutoSize = true;
             this.lblSaleTotal.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaleTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblSaleTotal.Location = new System.Drawing.Point(519, 205);
+            this.lblSaleTotal.Location = new System.Drawing.Point(519, 214);
             this.lblSaleTotal.Name = "lblSaleTotal";
             this.lblSaleTotal.Size = new System.Drawing.Size(46, 19);
             this.lblSaleTotal.TabIndex = 93;
@@ -2175,7 +2726,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(237, 205);
+            this.label17.Location = new System.Drawing.Point(237, 214);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(58, 19);
             this.label17.TabIndex = 91;
@@ -2417,7 +2968,7 @@
             this.btnSaleDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
             this.btnSaleDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnSaleDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnSaleDelete.Location = new System.Drawing.Point(907, 193);
+            this.btnSaleDelete.Location = new System.Drawing.Point(907, 198);
             this.btnSaleDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSaleDelete.Name = "btnSaleDelete";
             this.btnSaleDelete.Size = new System.Drawing.Size(80, 42);
@@ -2443,7 +2994,7 @@
             this.btnSaleSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
             this.btnSaleSearch.IdleForecolor = System.Drawing.Color.White;
             this.btnSaleSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnSaleSearch.Location = new System.Drawing.Point(641, 193);
+            this.btnSaleSearch.Location = new System.Drawing.Point(641, 198);
             this.btnSaleSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSaleSearch.Name = "btnSaleSearch";
             this.btnSaleSearch.Size = new System.Drawing.Size(80, 42);
@@ -2469,7 +3020,7 @@
             this.btnSaleModify.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
             this.btnSaleModify.IdleForecolor = System.Drawing.Color.White;
             this.btnSaleModify.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnSaleModify.Location = new System.Drawing.Point(819, 193);
+            this.btnSaleModify.Location = new System.Drawing.Point(819, 198);
             this.btnSaleModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSaleModify.Name = "btnSaleModify";
             this.btnSaleModify.Size = new System.Drawing.Size(80, 42);
@@ -2495,7 +3046,7 @@
             this.btnSaleAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnSaleAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnSaleAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnSaleAdd.Location = new System.Drawing.Point(730, 193);
+            this.btnSaleAdd.Location = new System.Drawing.Point(730, 198);
             this.btnSaleAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnSaleAdd.Name = "btnSaleAdd";
             this.btnSaleAdd.Size = new System.Drawing.Size(80, 42);
@@ -2601,362 +3152,54 @@
             this.label15.TabIndex = 13;
             this.label15.Text = "客戶姓名:";
             // 
-            // panelPhrase
+            // dgvInventory_Serno
             // 
-            this.panelPhrase.Controls.Add(this.panelPhraseView);
-            this.panelPhrase.Location = new System.Drawing.Point(0, 53);
-            this.panelPhrase.Name = "panelPhrase";
-            this.panelPhrase.Size = new System.Drawing.Size(1000, 695);
-            this.panelPhrase.TabIndex = 3;
+            this.dgvInventory_Serno.HeaderText = "Serno";
+            this.dgvInventory_Serno.Name = "dgvInventory_Serno";
+            this.dgvInventory_Serno.ReadOnly = true;
+            this.dgvInventory_Serno.Visible = false;
             // 
-            // panelPhraseView
+            // dgvInventory_Name
             // 
-            this.panelPhraseView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelPhraseView.Controls.Add(this.dgvPhrase);
-            this.panelPhraseView.Controls.Add(this.panelPhraseSearch);
-            this.panelPhraseView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPhraseView.Location = new System.Drawing.Point(0, 0);
-            this.panelPhraseView.Name = "panelPhraseView";
-            this.panelPhraseView.Size = new System.Drawing.Size(1000, 695);
-            this.panelPhraseView.TabIndex = 1;
+            this.dgvInventory_Name.HeaderText = "商品機型";
+            this.dgvInventory_Name.Name = "dgvInventory_Name";
+            this.dgvInventory_Name.ReadOnly = true;
+            this.dgvInventory_Name.Width = 300;
             // 
-            // dgvPhrase
+            // dgvInventory_Count
             // 
-            this.dgvPhrase.AllowUserToAddRows = false;
-            this.dgvPhrase.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvPhrase.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle93;
-            this.dgvPhrase.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.dgvPhrase.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvPhrase.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dgvPhrase.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle94.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle94.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle94.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle94.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle94.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle94.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhrase.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle94;
-            this.dgvPhrase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPhrase.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvPhrase_Serno,
-            this.dgvsPhrase_Name,
-            this.dgvPhrase_Type,
-            this.dgvPhrase_Index});
-            this.dgvPhrase.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle95.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle95.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle95.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle95.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhrase.DefaultCellStyle = dataGridViewCellStyle95;
-            this.dgvPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPhrase.DoubleBuffered = true;
-            this.dgvPhrase.EnableHeadersVisualStyles = false;
-            this.dgvPhrase.HeaderBgColor = System.Drawing.Color.Gray;
-            this.dgvPhrase.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvPhrase.Location = new System.Drawing.Point(0, 164);
-            this.dgvPhrase.Name = "dgvPhrase";
-            this.dgvPhrase.ReadOnly = true;
-            this.dgvPhrase.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle96.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle96.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle96.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle96.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhrase.RowHeadersDefaultCellStyle = dataGridViewCellStyle96;
-            this.dgvPhrase.RowHeadersVisible = false;
-            this.dgvPhrase.RowHeadersWidth = 50;
-            this.dgvPhrase.RowTemplate.Height = 24;
-            this.dgvPhrase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhrase.Size = new System.Drawing.Size(1000, 531);
-            this.dgvPhrase.TabIndex = 0;
-            this.dgvPhrase.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhrase_CellDoubleClick);
+            this.dgvInventory_Count.HeaderText = "數量";
+            this.dgvInventory_Count.Name = "dgvInventory_Count";
+            this.dgvInventory_Count.ReadOnly = true;
+            this.dgvInventory_Count.Width = 150;
             // 
-            // dgvPhrase_Serno
+            // dgvInventory_INAMT
             // 
-            this.dgvPhrase_Serno.HeaderText = "Serno";
-            this.dgvPhrase_Serno.Name = "dgvPhrase_Serno";
-            this.dgvPhrase_Serno.ReadOnly = true;
-            this.dgvPhrase_Serno.Visible = false;
+            this.dgvInventory_INAMT.HeaderText = "進貨總金額";
+            this.dgvInventory_INAMT.Name = "dgvInventory_INAMT";
+            this.dgvInventory_INAMT.ReadOnly = true;
+            this.dgvInventory_INAMT.Width = 200;
             // 
-            // dgvsPhrase_Name
+            // dgvInventory_OUTAMT
             // 
-            this.dgvsPhrase_Name.HeaderText = "名稱";
-            this.dgvsPhrase_Name.Name = "dgvsPhrase_Name";
-            this.dgvsPhrase_Name.ReadOnly = true;
-            this.dgvsPhrase_Name.Width = 400;
+            this.dgvInventory_OUTAMT.HeaderText = "出貨總金額";
+            this.dgvInventory_OUTAMT.Name = "dgvInventory_OUTAMT";
+            this.dgvInventory_OUTAMT.ReadOnly = true;
+            this.dgvInventory_OUTAMT.Width = 200;
             // 
-            // dgvPhrase_Type
+            // dgvInventory_POSTAMT
             // 
-            this.dgvPhrase_Type.HeaderText = "類別";
-            this.dgvPhrase_Type.Name = "dgvPhrase_Type";
-            this.dgvPhrase_Type.ReadOnly = true;
-            this.dgvPhrase_Type.Width = 400;
+            this.dgvInventory_POSTAMT.HeaderText = "寄庫總金額";
+            this.dgvInventory_POSTAMT.Name = "dgvInventory_POSTAMT";
+            this.dgvInventory_POSTAMT.ReadOnly = true;
+            this.dgvInventory_POSTAMT.Width = 200;
             // 
-            // dgvPhrase_Index
+            // dgvInventory_RETURNAMT
             // 
-            this.dgvPhrase_Index.HeaderText = "順序";
-            this.dgvPhrase_Index.Name = "dgvPhrase_Index";
-            this.dgvPhrase_Index.ReadOnly = true;
-            this.dgvPhrase_Index.Width = 200;
-            // 
-            // panelPhraseSearch
-            // 
-            this.panelPhraseSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.panelPhraseSearch.Controls.Add(this.txtPhraseType);
-            this.panelPhraseSearch.Controls.Add(this.label18);
-            this.panelPhraseSearch.Controls.Add(this.ddlPhraseCategory);
-            this.panelPhraseSearch.Controls.Add(this.label20);
-            this.panelPhraseSearch.Controls.Add(this.lblPhraseTotal);
-            this.panelPhraseSearch.Controls.Add(this.label21);
-            this.panelPhraseSearch.Controls.Add(this.txtPhraseName);
-            this.panelPhraseSearch.Controls.Add(this.btnPhraseDelete);
-            this.panelPhraseSearch.Controls.Add(this.btnPhraseSearch);
-            this.panelPhraseSearch.Controls.Add(this.btnPhraseModify);
-            this.panelPhraseSearch.Controls.Add(this.btnPhraseAdd);
-            this.panelPhraseSearch.Controls.Add(this.label22);
-            this.panelPhraseSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPhraseSearch.Location = new System.Drawing.Point(0, 0);
-            this.panelPhraseSearch.Name = "panelPhraseSearch";
-            this.panelPhraseSearch.Size = new System.Drawing.Size(1000, 164);
-            this.panelPhraseSearch.TabIndex = 0;
-            // 
-            // txtPhraseType
-            // 
-            this.txtPhraseType.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhraseType.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
-            this.txtPhraseType.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtPhraseType.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
-            this.txtPhraseType.BorderThickness = 2;
-            this.txtPhraseType.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhraseType.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhraseType.ForeColor = System.Drawing.Color.Black;
-            this.txtPhraseType.isPassword = false;
-            this.txtPhraseType.Location = new System.Drawing.Point(119, 113);
-            this.txtPhraseType.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhraseType.Name = "txtPhraseType";
-            this.txtPhraseType.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtPhraseType.Size = new System.Drawing.Size(241, 35);
-            this.txtPhraseType.TabIndex = 99;
-            this.txtPhraseType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(69, 121);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 19);
-            this.label18.TabIndex = 98;
-            this.label18.Text = "類別:";
-            // 
-            // ddlPhraseCategory
-            // 
-            this.ddlPhraseCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.ddlPhraseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ddlPhraseCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlPhraseCategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ddlPhraseCategory.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
-            this.ddlPhraseCategory.ForeColor = System.Drawing.Color.DimGray;
-            this.ddlPhraseCategory.FormattingEnabled = true;
-            this.ddlPhraseCategory.Location = new System.Drawing.Point(119, 19);
-            this.ddlPhraseCategory.Name = "ddlPhraseCategory";
-            this.ddlPhraseCategory.Size = new System.Drawing.Size(241, 27);
-            this.ddlPhraseCategory.TabIndex = 97;
-            this.ddlPhraseCategory.SelectedIndexChanged += new System.EventHandler(this.ddlPhraseCategory_SelectedIndexChanged);
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(39, 22);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 19);
-            this.label20.TabIndex = 96;
-            this.label20.Text = "片語類別:";
-            // 
-            // lblPhraseTotal
-            // 
-            this.lblPhraseTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPhraseTotal.AutoSize = true;
-            this.lblPhraseTotal.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhraseTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblPhraseTotal.Location = new System.Drawing.Point(546, 122);
-            this.lblPhraseTotal.Name = "lblPhraseTotal";
-            this.lblPhraseTotal.Size = new System.Drawing.Size(46, 19);
-            this.lblPhraseTotal.TabIndex = 95;
-            this.lblPhraseTotal.Text = "Total";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(482, 122);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 19);
-            this.label21.TabIndex = 94;
-            this.label21.Text = "總筆數:";
-            // 
-            // txtPhraseName
-            // 
-            this.txtPhraseName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhraseName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
-            this.txtPhraseName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtPhraseName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
-            this.txtPhraseName.BorderThickness = 2;
-            this.txtPhraseName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhraseName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhraseName.ForeColor = System.Drawing.Color.Black;
-            this.txtPhraseName.isPassword = false;
-            this.txtPhraseName.Location = new System.Drawing.Point(119, 64);
-            this.txtPhraseName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhraseName.Name = "txtPhraseName";
-            this.txtPhraseName.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtPhraseName.Size = new System.Drawing.Size(241, 35);
-            this.txtPhraseName.TabIndex = 47;
-            this.txtPhraseName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // btnPhraseDelete
-            // 
-            this.btnPhraseDelete.ActiveBorderThickness = 1;
-            this.btnPhraseDelete.ActiveCornerRadius = 30;
-            this.btnPhraseDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnPhraseDelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPhraseDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnPhraseDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnPhraseDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseDelete.BackgroundImage")));
-            this.btnPhraseDelete.ButtonText = "刪 除";
-            this.btnPhraseDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhraseDelete.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPhraseDelete.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnPhraseDelete.IdleBorderThickness = 1;
-            this.btnPhraseDelete.IdleCornerRadius = 30;
-            this.btnPhraseDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnPhraseDelete.IdleForecolor = System.Drawing.Color.White;
-            this.btnPhraseDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnPhraseDelete.Location = new System.Drawing.Point(896, 110);
-            this.btnPhraseDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnPhraseDelete.Name = "btnPhraseDelete";
-            this.btnPhraseDelete.Size = new System.Drawing.Size(80, 42);
-            this.btnPhraseDelete.TabIndex = 46;
-            this.btnPhraseDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPhraseDelete.Click += new System.EventHandler(this.btnPhraseDelete_Click);
-            // 
-            // btnPhraseSearch
-            // 
-            this.btnPhraseSearch.ActiveBorderThickness = 1;
-            this.btnPhraseSearch.ActiveCornerRadius = 30;
-            this.btnPhraseSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnPhraseSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPhraseSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnPhraseSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnPhraseSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseSearch.BackgroundImage")));
-            this.btnPhraseSearch.ButtonText = "查 詢";
-            this.btnPhraseSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhraseSearch.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPhraseSearch.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnPhraseSearch.IdleBorderThickness = 1;
-            this.btnPhraseSearch.IdleCornerRadius = 30;
-            this.btnPhraseSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnPhraseSearch.IdleForecolor = System.Drawing.Color.White;
-            this.btnPhraseSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnPhraseSearch.Location = new System.Drawing.Point(630, 110);
-            this.btnPhraseSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnPhraseSearch.Name = "btnPhraseSearch";
-            this.btnPhraseSearch.Size = new System.Drawing.Size(80, 42);
-            this.btnPhraseSearch.TabIndex = 45;
-            this.btnPhraseSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPhraseSearch.Click += new System.EventHandler(this.btnPhraseSearch_Click);
-            // 
-            // btnPhraseModify
-            // 
-            this.btnPhraseModify.ActiveBorderThickness = 1;
-            this.btnPhraseModify.ActiveCornerRadius = 30;
-            this.btnPhraseModify.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnPhraseModify.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPhraseModify.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnPhraseModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnPhraseModify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseModify.BackgroundImage")));
-            this.btnPhraseModify.ButtonText = "修 改";
-            this.btnPhraseModify.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhraseModify.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPhraseModify.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnPhraseModify.IdleBorderThickness = 1;
-            this.btnPhraseModify.IdleCornerRadius = 30;
-            this.btnPhraseModify.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnPhraseModify.IdleForecolor = System.Drawing.Color.White;
-            this.btnPhraseModify.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnPhraseModify.Location = new System.Drawing.Point(808, 110);
-            this.btnPhraseModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnPhraseModify.Name = "btnPhraseModify";
-            this.btnPhraseModify.Size = new System.Drawing.Size(80, 42);
-            this.btnPhraseModify.TabIndex = 44;
-            this.btnPhraseModify.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPhraseModify.Click += new System.EventHandler(this.btnPhraseModify_Click);
-            // 
-            // btnPhraseAdd
-            // 
-            this.btnPhraseAdd.ActiveBorderThickness = 1;
-            this.btnPhraseAdd.ActiveCornerRadius = 30;
-            this.btnPhraseAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnPhraseAdd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPhraseAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnPhraseAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.btnPhraseAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhraseAdd.BackgroundImage")));
-            this.btnPhraseAdd.ButtonText = "新 增";
-            this.btnPhraseAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhraseAdd.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPhraseAdd.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnPhraseAdd.IdleBorderThickness = 1;
-            this.btnPhraseAdd.IdleCornerRadius = 30;
-            this.btnPhraseAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnPhraseAdd.IdleForecolor = System.Drawing.Color.White;
-            this.btnPhraseAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnPhraseAdd.Location = new System.Drawing.Point(719, 110);
-            this.btnPhraseAdd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnPhraseAdd.Name = "btnPhraseAdd";
-            this.btnPhraseAdd.Size = new System.Drawing.Size(80, 42);
-            this.btnPhraseAdd.TabIndex = 43;
-            this.btnPhraseAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPhraseAdd.Click += new System.EventHandler(this.btnPhraseAdd_Click);
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(69, 72);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(43, 19);
-            this.label22.TabIndex = 13;
-            this.label22.Text = "名稱:";
+            this.dgvInventory_RETURNAMT.HeaderText = "退貨總金額";
+            this.dgvInventory_RETURNAMT.Name = "dgvInventory_RETURNAMT";
+            this.dgvInventory_RETURNAMT.ReadOnly = true;
+            this.dgvInventory_RETURNAMT.Width = 200;
             // 
             // Main
             // 
@@ -2972,33 +3215,39 @@
             this.Text = "Main";
             this.panelLeft.ResumeLayout(false);
             this.panelLeftBottom.ResumeLayout(false);
-            this.panelLeftTop.ResumeLayout(false);
-            this.panelLeftTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelMember.ResumeLayout(false);
-            this.panelMemberView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
-            this.panelMemberSearch.ResumeLayout(false);
-            this.panelMemberSearch.PerformLayout();
-            this.panelBar.ResumeLayout(false);
-            this.panelBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelRight.ResumeLayout(false);
-            this.panelInventory.ResumeLayout(false);
-            this.panelInventoryView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
-            this.panelInventorySearch.ResumeLayout(false);
-            this.panelInventorySearch.PerformLayout();
-            this.panelSale.ResumeLayout(false);
-            this.panelSaleView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
-            this.panelSaleSearch.ResumeLayout(false);
-            this.panelSaleSearch.PerformLayout();
             this.panelPhrase.ResumeLayout(false);
             this.panelPhraseView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhrase)).EndInit();
             this.panelPhraseSearch.ResumeLayout(false);
             this.panelPhraseSearch.PerformLayout();
+            this.panelMember.ResumeLayout(false);
+            this.panelMemberView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
+            this.panelMemberSearch.ResumeLayout(false);
+            this.panelMemberSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMemberRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMemberLeft)).EndInit();
+            this.panelLeftTop.ResumeLayout(false);
+            this.panelLeftTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelInventory.ResumeLayout(false);
+            this.panelInventoryView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
+            this.panelInventorySearch.ResumeLayout(false);
+            this.panelInventorySearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventoryRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInventoryLeft)).EndInit();
+            this.panelBar.ResumeLayout(false);
+            this.panelBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelRight.ResumeLayout(false);
+            this.panelSale.ResumeLayout(false);
+            this.panelSaleView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
+            this.panelSaleSearch.ResumeLayout(false);
+            this.panelSaleSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaleRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaleLeft)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3070,14 +3319,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker dpkSaleDealEDTTM;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuDatepicker dpkSaleDealSDTTM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Serno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Mobile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Phone1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Phone2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Addr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_InsertDTTM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_ModifyDTTM;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblSaleTotal;
@@ -3104,17 +3345,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnPhraseModify;
         private Bunifu.Framework.UI.BunifuThinButton2 btnPhraseAdd;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Serno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_CSTName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Main;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Item;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Dealer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Comment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_DealDTTM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_ModifyDTTM;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtSaleComment;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblSaleTotalAmount;
@@ -3167,9 +3397,43 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label lblInventoryRETURNAMT;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.PictureBox btnMemberRight;
+        private System.Windows.Forms.PictureBox btnMemberLeft;
+        private System.Windows.Forms.ComboBox ddlMemberPage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Serno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Mobile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Phone1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Phone2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_Addr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_InsertDTTM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMember_ModifyDTTM;
+        private System.Windows.Forms.ComboBox ddlSalePage;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.PictureBox btnSaleRight;
+        private System.Windows.Forms.PictureBox btnSaleLeft;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Serno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_CSTName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Main;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Item;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Dealer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_Comment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_DealDTTM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSale_ModifyDTTM;
+        private System.Windows.Forms.ComboBox ddlInventoryPage;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.PictureBox btnInventoryRight;
+        private System.Windows.Forms.PictureBox btnInventoryLeft;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_Serno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory__Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory__Count;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_Count;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_INAMT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_OUTAMT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvInventory_POSTAMT;

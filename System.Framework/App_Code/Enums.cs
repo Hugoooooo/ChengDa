@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -142,6 +143,14 @@ namespace System.Framework
         庫存中,
         已出貨,
         進貨退出
+    }
+
+    public enum SortMode
+    {
+        [Description("Ascending")]
+        ASC,
+        [Description("Descending")]
+        DESC
     }
     #endregion
 }
