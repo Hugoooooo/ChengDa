@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PickInventoryImport));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
@@ -37,10 +41,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lbxItem = new System.Windows.Forms.ListBox();
+            this.dgvItem = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvItem_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvItem_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.panelBar.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +63,7 @@
             this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBar.Location = new System.Drawing.Point(0, 0);
             this.panelBar.Name = "panelBar";
-            this.panelBar.Size = new System.Drawing.Size(454, 32);
+            this.panelBar.Size = new System.Drawing.Size(550, 32);
             this.panelBar.TabIndex = 64;
             // 
             // lblClose
@@ -64,7 +71,7 @@
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(418, 3);
+            this.lblClose.Location = new System.Drawing.Point(522, 4);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(24, 23);
             this.lblClose.TabIndex = 64;
@@ -132,29 +139,84 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.lbxItem);
+            this.tabPage1.Controls.Add(this.dgvItem);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(422, 191);
+            this.tabPage1.Size = new System.Drawing.Size(518, 560);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "庫存資訊";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // lbxItem
+            // dgvItem
             // 
-            this.lbxItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbxItem.ColumnWidth = 200;
-            this.lbxItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbxItem.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbxItem.FormattingEnabled = true;
-            this.lbxItem.ItemHeight = 19;
-            this.lbxItem.Location = new System.Drawing.Point(3, 3);
-            this.lbxItem.MultiColumn = true;
-            this.lbxItem.Name = "lbxItem";
-            this.lbxItem.Size = new System.Drawing.Size(416, 185);
-            this.lbxItem.TabIndex = 0;
-            this.lbxItem.DoubleClick += new System.EventHandler(this.lbxItem_DoubleClick);
+            this.dgvItem.AllowUserToAddRows = false;
+            this.dgvItem.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvItem.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvItem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.dgvItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvItem.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvItem_Serno,
+            this.dgvItem_Code});
+            this.dgvItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvItem.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvItem.DoubleBuffered = true;
+            this.dgvItem.EnableHeadersVisualStyles = false;
+            this.dgvItem.HeaderBgColor = System.Drawing.Color.Gray;
+            this.dgvItem.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvItem.Location = new System.Drawing.Point(3, 3);
+            this.dgvItem.Name = "dgvItem";
+            this.dgvItem.ReadOnly = true;
+            this.dgvItem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvItem.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvItem.RowHeadersVisible = false;
+            this.dgvItem.RowHeadersWidth = 50;
+            this.dgvItem.RowTemplate.Height = 24;
+            this.dgvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvItem.Size = new System.Drawing.Size(512, 554);
+            this.dgvItem.TabIndex = 90;
+            this.dgvItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItem_CellDoubleClick);
+            // 
+            // dgvItem_Serno
+            // 
+            this.dgvItem_Serno.HeaderText = "序號";
+            this.dgvItem_Serno.Name = "dgvItem_Serno";
+            this.dgvItem_Serno.ReadOnly = true;
+            this.dgvItem_Serno.Visible = false;
+            // 
+            // dgvItem_Code
+            // 
+            this.dgvItem_Code.HeaderText = "寄庫代號";
+            this.dgvItem_Code.Name = "dgvItem_Code";
+            this.dgvItem_Code.ReadOnly = true;
+            this.dgvItem_Code.Width = 500;
             // 
             // tabControl1
             // 
@@ -163,14 +225,14 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 105);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(430, 220);
+            this.tabControl1.Size = new System.Drawing.Size(526, 589);
             this.tabControl1.TabIndex = 65;
             // 
             // PickInventoryImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 338);
+            this.ClientSize = new System.Drawing.Size(550, 706);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtName);
@@ -183,6 +245,7 @@
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -199,6 +262,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListBox lbxItem;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Serno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Code;
     }
 }

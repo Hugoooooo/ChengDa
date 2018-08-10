@@ -121,36 +121,36 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>41</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        BHpxC3fYeQLUIsGsuQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="dgvItem_Serno.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvInventory_Serno.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dgvItem_Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvInventory_Status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dgvItem_Amount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvInventory_Checkbox.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dgvItem_Datetime.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvInventory_Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

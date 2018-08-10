@@ -560,7 +560,6 @@ namespace ChengDa
             DataSet ds = APConfig.GoPage(view.SQLStatement, pageNum);
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                //rows.Add(new Object[] { view.SERNOLIST, view.INV_NAME, view.ITEMTOTAL, view.INAMT, view.OUTAMT, view.POSTAMT, view.RETURNAMT });
                 rows.Add(new Object[] { dr.ItemArray[1], dr.ItemArray[0], dr.ItemArray[2], dr.ItemArray[3], dr.ItemArray[4], dr.ItemArray[5], dr.ItemArray[6] });
             }
             //計算總合
@@ -654,7 +653,7 @@ namespace ChengDa
         {
             try
             {
-                if (dgvInventory.SelectedRows.Count > 0 && APConfig.SweetAlert(ShowBoxType.confirm, string.Format("是否確定要刪除{0}筆?", dgvInventory.SelectedRows.Count)))
+                if (dgvInventory.SelectedRows.Count > 0)
                 {
                     List<string> sernolist = new List<string>();
                     string delSernoList = "";
@@ -663,17 +662,23 @@ namespace ChengDa
                         sernolist.Add(row.Cells["dgvInventory_Serno"].Value.ToString());
                     }
                     delSernoList = APConfig.sqlArrayFormat(string.Join(",", sernolist));
-                    Inventory ent = new Inventory(APConfig.Conn);
-                    string sConditions = ent.getCondition(Inventory.ncConditions.sernolist.ToString(), delSernoList);
-                    ent.deleteAll(sConditions);
+
+                    using (var form = new PickInventoryDelete(mode.View, delSernoList))
+                    {
+                        panelInventory.Visible = false;
+                        panelMask.Visible = true;
+                        var result = form.ShowDialog();
+                        panelInventory.Visible = true;
+                        panelMask.Visible = false;
+                    }
                     inventoryLoadData(ddlInventoryPage.SelectedIndex + 1);
-                    APConfig.SweetAlert(ShowBoxType.alert, "刪除完成");
                 }
             }
             catch (Exception ex)
             {
                 APConfig.SweetAlert(ShowBoxType.alert, string.Format("刪除失敗 {0}", ex.Message));
             }
+
         }
         private void dgvInventory_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

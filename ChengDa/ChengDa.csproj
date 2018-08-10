@@ -103,6 +103,12 @@
     <Compile Include="PhraseEdit.Designer.cs">
       <DependentUpon>PhraseEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="PickInventoryDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickInventoryDelete.Designer.cs">
+      <DependentUpon>PickInventoryDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="PickInventoryReturn .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhraseEdit.resx">
       <DependentUpon>PhraseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickInventoryDelete.resx">
+      <DependentUpon>PickInventoryDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PickInventoryReturn .resx">
       <DependentUpon>PickInventoryReturn .cs</DependentUpon>

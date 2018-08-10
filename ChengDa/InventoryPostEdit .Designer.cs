@@ -43,6 +43,10 @@
             this.txtComment = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label17 = new System.Windows.Forms.Label();
             this.dgvItem = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvItem_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvItem_Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvItem_ImportDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvItem_Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.dpkImportDTTM = new Bunifu.Framework.UI.BunifuDatepicker();
             this.lblTotalAmt = new System.Windows.Forms.Label();
@@ -53,10 +57,8 @@
             this.btnItemAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnOK = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dgvItem_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvItem_Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvItem_ImportDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvItem_Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCount = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -226,6 +228,32 @@
             this.dgvItem.Size = new System.Drawing.Size(533, 281);
             this.dgvItem.TabIndex = 87;
             this.dgvItem.DoubleClick += new System.EventHandler(this.dgvItem_DoubleClick);
+            // 
+            // dgvItem_Name
+            // 
+            this.dgvItem_Name.HeaderText = "商品機型";
+            this.dgvItem_Name.Name = "dgvItem_Name";
+            this.dgvItem_Name.ReadOnly = true;
+            this.dgvItem_Name.Width = 200;
+            // 
+            // dgvItem_Amount
+            // 
+            this.dgvItem_Amount.HeaderText = "寄庫金額";
+            this.dgvItem_Amount.Name = "dgvItem_Amount";
+            this.dgvItem_Amount.ReadOnly = true;
+            this.dgvItem_Amount.Width = 130;
+            // 
+            // dgvItem_ImportDTTM
+            // 
+            this.dgvItem_ImportDTTM.HeaderText = "寄庫日期";
+            this.dgvItem_ImportDTTM.Name = "dgvItem_ImportDTTM";
+            this.dgvItem_ImportDTTM.ReadOnly = true;
+            // 
+            // dgvItem_Comment
+            // 
+            this.dgvItem_Comment.HeaderText = "寄庫備註";
+            this.dgvItem_Comment.Name = "dgvItem_Comment";
+            this.dgvItem_Comment.ReadOnly = true;
             // 
             // label4
             // 
@@ -416,31 +444,37 @@
             this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // dgvItem_Name
+            // txtCount
             // 
-            this.dgvItem_Name.HeaderText = "商品機型";
-            this.dgvItem_Name.Name = "dgvItem_Name";
-            this.dgvItem_Name.ReadOnly = true;
-            this.dgvItem_Name.Width = 200;
+            this.txtCount.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtCount.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtCount.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtCount.BorderThickness = 2;
+            this.txtCount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCount.ForeColor = System.Drawing.Color.Black;
+            this.txtCount.isPassword = false;
+            this.txtCount.Location = new System.Drawing.Point(398, 127);
+            this.txtCount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCount.Name = "txtCount";
+            this.txtCount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.txtCount.Size = new System.Drawing.Size(160, 30);
+            this.txtCount.TabIndex = 114;
+            this.txtCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // dgvItem_Amount
+            // label1
             // 
-            this.dgvItem_Amount.HeaderText = "寄庫金額";
-            this.dgvItem_Amount.Name = "dgvItem_Amount";
-            this.dgvItem_Amount.ReadOnly = true;
-            this.dgvItem_Amount.Width = 130;
-            // 
-            // dgvItem_ImportDTTM
-            // 
-            this.dgvItem_ImportDTTM.HeaderText = "寄庫日期";
-            this.dgvItem_ImportDTTM.Name = "dgvItem_ImportDTTM";
-            this.dgvItem_ImportDTTM.ReadOnly = true;
-            // 
-            // dgvItem_Comment
-            // 
-            this.dgvItem_Comment.HeaderText = "寄庫備註";
-            this.dgvItem_Comment.Name = "dgvItem_Comment";
-            this.dgvItem_Comment.ReadOnly = true;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(317, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 19);
+            this.label1.TabIndex = 115;
+            this.label1.Text = "商品數量:";
             // 
             // InventoryPostEdit
             // 
@@ -448,6 +482,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(602, 671);
+            this.Controls.Add(this.txtCount);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTotalAmt);
             this.Controls.Add(this.dpkImportDTTM);
             this.Controls.Add(this.label4);
@@ -502,5 +538,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_ImportDTTM;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Comment;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtCount;
+        private System.Windows.Forms.Label label1;
     }
 }

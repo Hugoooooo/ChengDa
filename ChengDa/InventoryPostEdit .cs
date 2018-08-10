@@ -31,6 +31,7 @@ namespace ChengDa
             if (mode == mode.Add)
             {
                 btnOK.ButtonText = "新增";
+                txtCount.Text = "1";
                 btnOK.IdleFillColor = Color.FromArgb(33, 166, 117);
                 btnOK.IdleLineColor = Color.FromArgb(33, 166, 117);
                 btnOK.ActiveFillColor = Color.FromArgb(33, 166, 117);
@@ -58,6 +59,7 @@ namespace ChengDa
                     txtAmount.Text = view.INV_POSTAMT.ToString();
                     txtComment.Text = view.INV_POSTCOMMENT;
                     dpkImportDTTM.Value = view.INV_POSTDTTM;
+                    txtCount.Text = "1";
                 }
             }
             else if (mode == mode.View)
@@ -78,6 +80,7 @@ namespace ChengDa
                     txtAmount.Text = view.INV_POSTAMT.ToString();
                     txtComment.Text = view.INV_POSTCOMMENT;
                     dpkImportDTTM.Value = view.INV_POSTDTTM;
+                    txtCount.Text = "1";
                 }
             }
         }
@@ -88,6 +91,8 @@ namespace ChengDa
                 msg = "商品資訊無法為空!";
             else if (mode == mode.Edit && string.IsNullOrEmpty(txtAmount.Text))
                 msg = "商品金額無法為空!";
+            else if (mode == mode.Edit && string.IsNullOrEmpty(txtCount.Text))
+                msg = "數量欄位請輸入數字";
             else if (mode == mode.Edit && string.IsNullOrEmpty(txtName.Text))
                 msg = "商品名稱無法為空!";
 
@@ -110,11 +115,14 @@ namespace ChengDa
         private void itemInfoAdd()
         {
             #region 判斷
+            int count = 0;
             string msg = "";
             if (string.IsNullOrEmpty(txtAmount.Text))
                 msg = "請輸入寄庫金額";
             else if (!int.TryParse(txtAmount.Text,out int n))
                 msg = "金額欄位請輸入數字";
+            else if (!int.TryParse(txtCount.Text, out count))
+                msg = "數量欄位請輸入數字";
             else if (string.IsNullOrEmpty(txtName.Text))
                 msg = "請輸入商品名稱";
 
@@ -126,7 +134,10 @@ namespace ChengDa
             #endregion
 
             DataGridViewRowCollection rows = dgvItem.Rows;
-            rows.Add(new Object[] { txtName.Text,txtAmount.Text,dpkImportDTTM.Value.ToShortDateString(),txtComment.Text });
+            for(int i=0;i<count;i++)
+            {
+                rows.Add(new Object[] { txtName.Text, txtAmount.Text, dpkImportDTTM.Value.ToShortDateString(), txtComment.Text });
+            }            
             clearPage();
             loadTotalAmount();
         }
@@ -229,6 +240,7 @@ namespace ChengDa
         {
             txtName.Text = "";
             txtAmount.Text = "";
+            txtCount.Text = "1";
             //dpkImportDTTM.Value = DateTime.Today;
             txtComment.Text = "";
             txtName.Focus();

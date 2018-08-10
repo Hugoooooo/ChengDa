@@ -16,11 +16,6 @@ namespace ChengDa
     {
         public string itemserno;
         public string sernolist;
-        public class SomeData
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
 
         public PickInventoryPost(string pSernoList)
         {
@@ -42,10 +37,10 @@ namespace ChengDa
 
         private void ItemSearch()
         {
-            string info = "";
-            lbxItem.DataSource=null;
-            List<SomeData> data = new List<SomeData>();
+            dgvItem.Rows.Clear();
+            DataGridViewRowCollection rows = dgvItem.Rows;
             InventoryInfo view = new InventoryInfo(APConfig.Conn);
+            int totalamount = 0;
             view.Conditions = " 1=1 ";
             view.Conditions += " AND " + view.getCondition(InventoryInfo.ncConditions.status.ToString(), InventoryStatus.寄庫品.ToString());
             if(!string.IsNullOrEmpty(txtName.Text))
@@ -56,17 +51,19 @@ namespace ChengDa
             view.load();
             while (!view.IsEof)
             {
-                info = string.Format("[{0}] ( 寄庫金額:{1:n0}元 / 寄庫時間:{2} )",view.INV_NAME, view.INV_POSTAMT, view.INV_POSTDTTM.ToShortDateString());
-                data.Add(new SomeData() { Value = view.INV_SERNO, Text = info });
+                rows.Add(new Object[] { view.INV_SERNO,view.INV_NAME,view.INV_POSTAMT,view.INV_POSTDTTM.ToShortDateString() });
+                totalamount += view.INV_POSTAMT;
                 view.next();
             }
-            lbxItem.DisplayMember = "Text";
-            lbxItem.DataSource = data;
+            lblTotalCount.Text = string.Format("總件數:{0}", view.calculateCount());
+            lblTotalAmt.Text = string.Format("總金額:{0}", totalamount);
         }
 
-        private void lbxItem_DoubleClick(object sender, EventArgs e)
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            itemserno = (lbxItem.SelectedItem as SomeData).Value;
+            if (e.RowIndex == -1) return;
+            DataGridViewRow row = this.dgvItem.SelectedRows[0];
+            itemserno = row.Cells["dgvItem_Serno"].Value.ToString();
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

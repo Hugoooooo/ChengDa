@@ -16,11 +16,6 @@ namespace ChengDa
     {
         public string itemserno;
         public string sernolist;
-        public class SomeData
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
 
         public PickInventoryImport(string pSernoList)
         {
@@ -42,8 +37,8 @@ namespace ChengDa
 
         private void ItemSearch()
         {
-            lbxItem.DataSource=null;
-            List<SomeData> data = new List<SomeData>();
+            dgvItem.Rows.Clear();
+            DataGridViewRowCollection rows = dgvItem.Rows;
             InventoryInfo view = new InventoryInfo(APConfig.Conn);
             view.Conditions = " 1=1 ";
             view.Conditions += " AND " + view.getCondition(InventoryInfo.ncConditions.status.ToString(), InventoryStatus.庫存中.ToString());
@@ -55,16 +50,16 @@ namespace ChengDa
             view.load();
             while (!view.IsEof)
             {
-                data.Add(new SomeData() { Value = view.INV_SERNO, Text = view.INV_CODE });
+                rows.Add(new Object[] { view.INV_SERNO, view.INV_CODE });
                 view.next();
             }
-            lbxItem.DisplayMember = "Text";
-            lbxItem.DataSource = data;
         }
 
-        private void lbxItem_DoubleClick(object sender, EventArgs e)
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            itemserno = (lbxItem.SelectedItem as SomeData).Value;
+            if (e.RowIndex == -1) return;
+            DataGridViewRow row = this.dgvItem.SelectedRows[0];
+            itemserno = row.Cells["dgvItem_Serno"].Value.ToString();
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

@@ -131,7 +131,7 @@
             this.txtAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtAmount.Size = new System.Drawing.Size(160, 30);
+            this.txtAmount.Size = new System.Drawing.Size(185, 30);
             this.txtAmount.TabIndex = 3;
             this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -367,7 +367,7 @@
             this.txtCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtCode.Name = "txtCode";
             this.txtCode.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtCode.Size = new System.Drawing.Size(160, 30);
+            this.txtCode.Size = new System.Drawing.Size(185, 30);
             this.txtCode.TabIndex = 1;
             this.txtCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -467,7 +467,7 @@
             this.txtReturnAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtReturnAmount.Name = "txtReturnAmount";
             this.txtReturnAmount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtReturnAmount.Size = new System.Drawing.Size(160, 30);
+            this.txtReturnAmount.Size = new System.Drawing.Size(185, 30);
             this.txtReturnAmount.TabIndex = 12;
             this.txtReturnAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 

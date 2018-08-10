@@ -135,8 +135,10 @@ namespace ChengDa
             {
                 c.Items.Add(i.ToString());
             }
-            c.SelectedItem =
-            c.SelectedIndex = 0;
+            if(c.Items.Count>0)
+                c.SelectedIndex = 0;
+            else
+                APConfig.SweetAlert(ShowBoxType.alert, "查無資料" );
             return c;
         }
 
