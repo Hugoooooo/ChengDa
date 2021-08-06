@@ -87,7 +87,6 @@
     <Compile Include="DataAccess\SQLStatement\PLSQLBuilder.cs" />
     <Compile Include="DataAccess\SQLStatement\TSQLBuilder.cs" />
     <Compile Include="DataAccess\SQLStatement\SQLBuilder.cs" />
-    <Compile Include="Log\MyLog.cs" />
     <Compile Include="Office\ExcelFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

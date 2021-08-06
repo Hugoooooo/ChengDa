@@ -3,7 +3,6 @@ using System.Data;
 using System.Data.OleDb;
 using System.Application.Common;
 using System.Application.DataAccess.Common;
-using System.Application.Log;
 using System.Collections.Generic;
 
 namespace System.Application.DataAccess.Provider.Excel
@@ -102,7 +101,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
         }
@@ -117,7 +115,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally
@@ -137,7 +134,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally
@@ -164,7 +160,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(string.Format("(ExecuteNonQuery SQL = {0}) \r\n {1}", sheet, ex.ToString()), LogLevel.Error);
                 throw new MyException(_exceptionMessage);
             }
             finally
@@ -209,7 +204,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(string.Format("(ExecuteReader SQL = {0}) \r\n {1}", _sql, ex.ToString()), LogLevel.Error);
                 throw new MyException(_exceptionMessage);
             }
         }
@@ -257,7 +251,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(string.Format("(ExecuteReader SQL = {0}) \r\n {1}", _sql, ex.ToString()), LogLevel.Error);
                 throw new MyException(_exceptionMessage);
             }
         }
@@ -275,7 +268,6 @@ namespace System.Application.DataAccess.Provider.Excel
             }
             catch (Exception ex)
             {
-                MyLog.Write(string.Format("(ExecuteScalar SQL = {0}) \r\n {1}", sheet, ex.ToString()), LogLevel.Error);
                 throw new MyException(_exceptionMessage);
             }
             finally

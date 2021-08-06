@@ -11,7 +11,6 @@ using log4net;
 using System.Diagnostics;
 using Oracle.ManagedDataAccess.Client;
 using System.Application.Common;
-using System.Application.Log;
 
 namespace System.Application.DataAccess.Provider.Oracle
 {
@@ -106,7 +105,6 @@ namespace System.Application.DataAccess.Provider.Oracle
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
         }
@@ -122,7 +120,6 @@ namespace System.Application.DataAccess.Provider.Oracle
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally
@@ -142,7 +139,6 @@ namespace System.Application.DataAccess.Provider.Oracle
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally

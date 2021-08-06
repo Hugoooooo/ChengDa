@@ -24,8 +24,6 @@ namespace ChengDa
 {
     public class APConfig
     {
-        private static readonly ILog TxtLog = LogManager.GetLogger(typeof(SQLConnection));
-
         public static string MSSQLConnStringFormat = @"packet size=4096;Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};connect timeout=240;Min Pool Size=5;Max Pool Size=200";
 
         public static IConnection Conn = null;

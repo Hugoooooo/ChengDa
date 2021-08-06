@@ -47,6 +47,7 @@ namespace ChengDa
                 btnOK.IdleLineColor = Color.FromArgb(255, 161, 0);
                 btnOK.ActiveFillColor = Color.FromArgb(255, 161, 0);
                 btnOK.ActiveLineColor = Color.FromArgb(255, 161, 0);
+                btnAvg.Visible = false;
                 btnItemAdd.Visible = false;
                 btnItemDel.Visible = false;
                 btnClear.Visible = false;
@@ -160,7 +161,7 @@ namespace ChengDa
             }
             #endregion
             DataGridViewRowCollection rows = dgvItem.Rows;
-            rows.Add(new Object[] { serno,txtCode.Text,txtName.Text,txtExportAmount.Text,ddlDealer.SelectedItem.ToString(), dpkExportDTTM.Value.ToShortDateString(),txtExportComment.Text });
+            rows.Add(new Object[] { serno,txtCode.Text,txtName.Text, txtImportAmount.Text, txtExportAmount.Text,ddlDealer.SelectedItem.ToString(), dpkExportDTTM.Value.ToShortDateString(),txtExportComment.Text });
             clearTextBox();
             loadTotalAmount();
         }
@@ -342,6 +343,52 @@ namespace ChengDa
             txtImportAmount.Text = view.INV_INAMT.ToString();
             dpkImportDTTM.Value = view.INV_INDTTM;
             txtImportComment.Text = view.INV_INCOMMENT;
+        }
+
+        private void btnAvg_Click(object sender, EventArgs e)
+        {
+            if (checkAvg())
+            {
+                int avg = int.Parse(txtAvgAmount.Text);
+                int importTotal = dgvItem.SelectedRows.Cast<DataGridViewRow>().Sum(row => int.Parse(row.Cells["dgvItem_Import"].Value.ToString()));
+                foreach (DataGridViewRow row in dgvItem.SelectedRows)
+                {
+                    int importAmt = int.Parse(row.Cells["dgvItem_Import"].Value.ToString());
+                    row.Cells["dgvItem_Amount"].Value = Math.Round((double)importAmt / importTotal * avg);
+                }
+                int exportTotal = dgvItem.Rows.Cast<DataGridViewRow>().Sum(row => int.Parse(row.Cells["dgvItem_Amount"].Value.ToString()));
+                lblTotalAmt.Text = string.Format("出貨總金額: {0:n0}  元", exportTotal);
+            }
+        }
+
+        private bool checkAvg()
+        {
+            string msg = "";
+            if (dgvItem.SelectedRows.Count <= 1)
+                msg = "請選取商品資訊至少大於一筆!";
+            else if (String.IsNullOrEmpty(txtAvgAmount.Text))
+            {
+                msg = "平均金額不能為空值!";
+            }
+            else
+            {
+                int total = 0;
+                int avg = int.Parse(txtAvgAmount.Text);
+                foreach (DataGridViewRow row in dgvItem.SelectedRows)
+                {
+                    int importAmt = int.Parse(row.Cells["dgvItem_Import"].Value.ToString());
+                    total += importAmt;
+                    if (importAmt > avg || total > avg)
+                    {
+                        msg = "平均金額設定需大於選擇進貨金額總和!";
+                    }
+                }
+            }
+            if (!string.IsNullOrEmpty(msg))
+            {
+                APConfig.SweetAlert(ShowBoxType.alert, msg);
+            }
+            return string.IsNullOrEmpty(msg) ? true : false;
         }
     }
 }

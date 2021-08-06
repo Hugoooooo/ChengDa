@@ -5,7 +5,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Application.Common;
 using System.Application.DataAccess.Common;
-using System.Application.Log;
 using log4net;
 using log4net.Config;
 using System.Collections.Generic;
@@ -127,7 +126,6 @@ namespace System.Application.DataAccess.Provider.SQLServer
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }            
         }
@@ -142,7 +140,6 @@ namespace System.Application.DataAccess.Provider.SQLServer
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally
@@ -162,7 +159,6 @@ namespace System.Application.DataAccess.Provider.SQLServer
             }
             catch (Exception ex)
             {
-                MyLog.Write(ex.ToString(), LogLevel.Fatal);
                 throw new MyException(_exceptionMessage);
             }
             finally

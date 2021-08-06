@@ -64,9 +64,13 @@
             this.btnItemAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnOK = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAvg = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtAvgAmount = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dgvItem_Serno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvItem_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvItem_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvItem_Import = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvItem_Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvItem_Dealer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvItem_ImportDTTM = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,9 +85,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(103, 82);
+            this.label2.Location = new System.Drawing.Point(120, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 24);
+            this.label2.Size = new System.Drawing.Size(75, 26);
             this.label2.TabIndex = 17;
             this.label2.Text = "出貨單";
             // 
@@ -99,7 +103,7 @@
             this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBar.Location = new System.Drawing.Point(0, 0);
             this.panelBar.Name = "panelBar";
-            this.panelBar.Size = new System.Drawing.Size(602, 32);
+            this.panelBar.Size = new System.Drawing.Size(702, 35);
             this.panelBar.TabIndex = 66;
             this.panelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseDown);
             this.panelBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBar_MouseMove);
@@ -110,9 +114,9 @@
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(572, 5);
+            this.lblClose.Location = new System.Drawing.Point(667, 5);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 23);
+            this.lblClose.Size = new System.Drawing.Size(28, 27);
             this.lblClose.TabIndex = 64;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -130,11 +134,11 @@
             this.txtImportAmount.ForeColor = System.Drawing.Color.Black;
             this.txtImportAmount.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.txtImportAmount.isPassword = false;
-            this.txtImportAmount.Location = new System.Drawing.Point(117, 169);
-            this.txtImportAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImportAmount.Location = new System.Drawing.Point(136, 183);
+            this.txtImportAmount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtImportAmount.Name = "txtImportAmount";
-            this.txtImportAmount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtImportAmount.Size = new System.Drawing.Size(160, 30);
+            this.txtImportAmount.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtImportAmount.Size = new System.Drawing.Size(187, 33);
             this.txtImportAmount.TabIndex = 3;
             this.txtImportAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -146,9 +150,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(37, 175);
+            this.label11.Location = new System.Drawing.Point(43, 190);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 19);
+            this.label11.Size = new System.Drawing.Size(82, 22);
             this.label11.TabIndex = 71;
             this.label11.Text = "進貨金額:";
             // 
@@ -164,11 +168,11 @@
             this.txtImportComment.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImportComment.ForeColor = System.Drawing.Color.Black;
             this.txtImportComment.isPassword = false;
-            this.txtImportComment.Location = new System.Drawing.Point(117, 211);
-            this.txtImportComment.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImportComment.Location = new System.Drawing.Point(136, 229);
+            this.txtImportComment.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtImportComment.Name = "txtImportComment";
-            this.txtImportComment.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtImportComment.Size = new System.Drawing.Size(450, 30);
+            this.txtImportComment.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtImportComment.Size = new System.Drawing.Size(525, 33);
             this.txtImportComment.TabIndex = 4;
             this.txtImportComment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -180,9 +184,9 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(37, 217);
+            this.label17.Location = new System.Drawing.Point(43, 235);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 19);
+            this.label17.Size = new System.Drawing.Size(82, 22);
             this.label17.TabIndex = 80;
             this.label17.Text = "進貨備註:";
             // 
@@ -209,6 +213,7 @@
             this.dgvItem_Serno,
             this.dgvItem_Code,
             this.dgvItem_Name,
+            this.dgvItem_Import,
             this.dgvItem_Amount,
             this.dgvItem_Dealer,
             this.dgvItem_ImportDTTM,
@@ -226,7 +231,7 @@
             this.dgvItem.EnableHeadersVisualStyles = false;
             this.dgvItem.HeaderBgColor = System.Drawing.Color.Gray;
             this.dgvItem.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvItem.Location = new System.Drawing.Point(41, 427);
+            this.dgvItem.Location = new System.Drawing.Point(48, 463);
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.ReadOnly = true;
             this.dgvItem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -242,7 +247,7 @@
             this.dgvItem.RowHeadersWidth = 50;
             this.dgvItem.RowTemplate.Height = 24;
             this.dgvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItem.Size = new System.Drawing.Size(533, 202);
+            this.dgvItem.Size = new System.Drawing.Size(622, 219);
             this.dgvItem.TabIndex = 87;
             this.dgvItem.DoubleClick += new System.EventHandler(this.dgvItem_DoubleClick);
             // 
@@ -254,9 +259,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(321, 175);
+            this.label4.Location = new System.Drawing.Point(374, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 19);
+            this.label4.Size = new System.Drawing.Size(82, 22);
             this.label4.TabIndex = 91;
             this.label4.Text = "進貨日期:";
             // 
@@ -269,9 +274,9 @@
             this.dpkImportDTTM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkImportDTTM.FormatCustom = null;
             this.dpkImportDTTM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dpkImportDTTM.Location = new System.Drawing.Point(402, 167);
+            this.dpkImportDTTM.Location = new System.Drawing.Point(469, 181);
             this.dpkImportDTTM.Name = "dpkImportDTTM";
-            this.dpkImportDTTM.Size = new System.Drawing.Size(160, 35);
+            this.dpkImportDTTM.Size = new System.Drawing.Size(187, 38);
             this.dpkImportDTTM.TabIndex = 91;
             this.dpkImportDTTM.Value = new System.DateTime(2018, 6, 30, 3, 42, 0, 0);
             // 
@@ -283,9 +288,9 @@
             this.lblTotalAmt.AutoSize = true;
             this.lblTotalAmt.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAmt.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalAmt.Location = new System.Drawing.Point(420, 644);
+            this.lblTotalAmt.Location = new System.Drawing.Point(490, 698);
             this.lblTotalAmt.Name = "lblTotalAmt";
-            this.lblTotalAmt.Size = new System.Drawing.Size(90, 19);
+            this.lblTotalAmt.Size = new System.Drawing.Size(100, 22);
             this.lblTotalAmt.TabIndex = 96;
             this.lblTotalAmt.Text = "總金額: 0 元";
             // 
@@ -294,9 +299,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(37, 133);
+            this.label1.Location = new System.Drawing.Point(43, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 19);
+            this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 15;
             this.label1.Text = "商品條碼:";
             // 
@@ -308,9 +313,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(321, 133);
+            this.label3.Location = new System.Drawing.Point(374, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 19);
+            this.label3.Size = new System.Drawing.Size(82, 22);
             this.label3.TabIndex = 19;
             this.label3.Text = "商品機型:";
             // 
@@ -327,11 +332,11 @@
             this.txtCode.ForeColor = System.Drawing.Color.Black;
             this.txtCode.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.txtCode.isPassword = false;
-            this.txtCode.Location = new System.Drawing.Point(117, 127);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCode.Location = new System.Drawing.Point(136, 138);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtCode.Size = new System.Drawing.Size(160, 30);
+            this.txtCode.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtCode.Size = new System.Drawing.Size(187, 33);
             this.txtCode.TabIndex = 1;
             this.txtCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -347,11 +352,11 @@
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.isPassword = false;
-            this.txtName.Location = new System.Drawing.Point(402, 127);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(469, 138);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtName.Size = new System.Drawing.Size(160, 30);
+            this.txtName.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtName.Size = new System.Drawing.Size(187, 33);
             this.txtName.TabIndex = 2;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -364,9 +369,9 @@
             this.dpkExportDTTM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkExportDTTM.FormatCustom = null;
             this.dpkExportDTTM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dpkExportDTTM.Location = new System.Drawing.Point(402, 298);
+            this.dpkExportDTTM.Location = new System.Drawing.Point(469, 274);
             this.dpkExportDTTM.Name = "dpkExportDTTM";
-            this.dpkExportDTTM.Size = new System.Drawing.Size(160, 35);
+            this.dpkExportDTTM.Size = new System.Drawing.Size(187, 38);
             this.dpkExportDTTM.TabIndex = 119;
             this.dpkExportDTTM.Value = new System.DateTime(2018, 6, 30, 3, 42, 0, 0);
             // 
@@ -378,9 +383,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(317, 306);
+            this.label5.Location = new System.Drawing.Point(374, 287);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 19);
+            this.label5.Size = new System.Drawing.Size(82, 22);
             this.label5.TabIndex = 120;
             this.label5.Text = "出貨日期:";
             // 
@@ -394,11 +399,11 @@
             this.txtExportComment.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExportComment.ForeColor = System.Drawing.Color.Black;
             this.txtExportComment.isPassword = false;
-            this.txtExportComment.Location = new System.Drawing.Point(117, 341);
-            this.txtExportComment.Margin = new System.Windows.Forms.Padding(4);
+            this.txtExportComment.Location = new System.Drawing.Point(136, 369);
+            this.txtExportComment.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtExportComment.Name = "txtExportComment";
-            this.txtExportComment.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtExportComment.Size = new System.Drawing.Size(450, 30);
+            this.txtExportComment.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtExportComment.Size = new System.Drawing.Size(525, 33);
             this.txtExportComment.TabIndex = 13;
             this.txtExportComment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -410,9 +415,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 347);
+            this.label6.Location = new System.Drawing.Point(43, 376);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 19);
+            this.label6.Size = new System.Drawing.Size(82, 22);
             this.label6.TabIndex = 118;
             this.label6.Text = "出貨備註:";
             // 
@@ -427,11 +432,11 @@
             this.txtExportAmount.ForeColor = System.Drawing.Color.Black;
             this.txtExportAmount.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.txtExportAmount.isPassword = false;
-            this.txtExportAmount.Location = new System.Drawing.Point(117, 300);
-            this.txtExportAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtExportAmount.Location = new System.Drawing.Point(136, 325);
+            this.txtExportAmount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtExportAmount.Name = "txtExportAmount";
-            this.txtExportAmount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtExportAmount.Size = new System.Drawing.Size(160, 30);
+            this.txtExportAmount.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtExportAmount.Size = new System.Drawing.Size(187, 33);
             this.txtExportAmount.TabIndex = 12;
             this.txtExportAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -443,9 +448,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(37, 306);
+            this.label7.Location = new System.Drawing.Point(43, 332);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 19);
+            this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 117;
             this.label7.Text = "出貨金額:";
             // 
@@ -461,9 +466,9 @@
             this.ddlDealer.Items.AddRange(new object[] {
             "劉居政",
             "劉奇信"});
-            this.ddlDealer.Location = new System.Drawing.Point(117, 260);
+            this.ddlDealer.Location = new System.Drawing.Point(136, 282);
             this.ddlDealer.Name = "ddlDealer";
-            this.ddlDealer.Size = new System.Drawing.Size(160, 27);
+            this.ddlDealer.Size = new System.Drawing.Size(186, 30);
             this.ddlDealer.TabIndex = 11;
             // 
             // label8
@@ -474,9 +479,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(37, 265);
+            this.label8.Location = new System.Drawing.Point(43, 287);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 19);
+            this.label8.Size = new System.Drawing.Size(82, 22);
             this.label8.TabIndex = 122;
             this.label8.Text = "出貨人員:";
             // 
@@ -498,10 +503,10 @@
             this.btnItemPick.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
             this.btnItemPick.IdleForecolor = System.Drawing.Color.White;
             this.btnItemPick.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(161)))), ((int)(((byte)(0)))));
-            this.btnItemPick.Location = new System.Drawing.Point(188, 72);
-            this.btnItemPick.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnItemPick.Location = new System.Drawing.Point(219, 78);
+            this.btnItemPick.Margin = new System.Windows.Forms.Padding(5);
             this.btnItemPick.Name = "btnItemPick";
-            this.btnItemPick.Size = new System.Drawing.Size(80, 42);
+            this.btnItemPick.Size = new System.Drawing.Size(93, 46);
             this.btnItemPick.TabIndex = 10;
             this.btnItemPick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnItemPick.Click += new System.EventHandler(this.btnItemPick_Click);
@@ -524,10 +529,10 @@
             this.btnClear.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
             this.btnClear.IdleForecolor = System.Drawing.Color.White;
             this.btnClear.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnClear.Location = new System.Drawing.Point(488, 379);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClear.Location = new System.Drawing.Point(569, 411);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(80, 42);
+            this.btnClear.Size = new System.Drawing.Size(93, 46);
             this.btnClear.TabIndex = 113;
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -550,10 +555,10 @@
             this.btnItemDel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
             this.btnItemDel.IdleForecolor = System.Drawing.Color.White;
             this.btnItemDel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(78)))), ((int)(((byte)(113)))));
-            this.btnItemDel.Location = new System.Drawing.Point(403, 379);
-            this.btnItemDel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnItemDel.Location = new System.Drawing.Point(470, 411);
+            this.btnItemDel.Margin = new System.Windows.Forms.Padding(5);
             this.btnItemDel.Name = "btnItemDel";
-            this.btnItemDel.Size = new System.Drawing.Size(80, 42);
+            this.btnItemDel.Size = new System.Drawing.Size(93, 46);
             this.btnItemDel.TabIndex = 112;
             this.btnItemDel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnItemDel.Click += new System.EventHandler(this.btnItemDel_Click);
@@ -576,10 +581,10 @@
             this.btnItemAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
             this.btnItemAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnItemAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(117)))));
-            this.btnItemAdd.Location = new System.Drawing.Point(318, 379);
-            this.btnItemAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnItemAdd.Location = new System.Drawing.Point(371, 411);
+            this.btnItemAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btnItemAdd.Name = "btnItemAdd";
-            this.btnItemAdd.Size = new System.Drawing.Size(80, 42);
+            this.btnItemAdd.Size = new System.Drawing.Size(93, 46);
             this.btnItemAdd.TabIndex = 111;
             this.btnItemAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnItemAdd.Click += new System.EventHandler(this.btnItemAdd_Click);
@@ -587,9 +592,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(32, 48);
+            this.pictureBox4.Location = new System.Drawing.Point(37, 52);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 62);
+            this.pictureBox4.Size = new System.Drawing.Size(75, 67);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 65;
             this.pictureBox4.TabStop = false;
@@ -612,24 +617,86 @@
             this.btnOK.IdleFillColor = System.Drawing.Color.Gray;
             this.btnOK.IdleForecolor = System.Drawing.Color.White;
             this.btnOK.IdleLineColor = System.Drawing.Color.Gray;
-            this.btnOK.Location = new System.Drawing.Point(270, 677);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOK.Location = new System.Drawing.Point(315, 733);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(72, 41);
+            this.btnOK.Size = new System.Drawing.Size(84, 44);
             this.btnOK.TabIndex = 64;
             this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // btnAvg
+            // 
+            this.btnAvg.ActiveBorderThickness = 1;
+            this.btnAvg.ActiveCornerRadius = 30;
+            this.btnAvg.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.btnAvg.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAvg.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.btnAvg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.btnAvg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAvg.BackgroundImage")));
+            this.btnAvg.ButtonText = "平均";
+            this.btnAvg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAvg.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAvg.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAvg.IdleBorderThickness = 1;
+            this.btnAvg.IdleCornerRadius = 30;
+            this.btnAvg.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.btnAvg.IdleForecolor = System.Drawing.Color.White;
+            this.btnAvg.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.btnAvg.Location = new System.Drawing.Point(268, 411);
+            this.btnAvg.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAvg.Name = "btnAvg";
+            this.btnAvg.Size = new System.Drawing.Size(93, 46);
+            this.btnAvg.TabIndex = 124;
+            this.btnAvg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAvg.Click += new System.EventHandler(this.btnAvg_Click);
+            // 
+            // txtAvgAmount
+            // 
+            this.txtAvgAmount.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtAvgAmount.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtAvgAmount.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
+            this.txtAvgAmount.BorderThickness = 2;
+            this.txtAvgAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAvgAmount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAvgAmount.ForeColor = System.Drawing.Color.Black;
+            this.txtAvgAmount.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.txtAvgAmount.isPassword = false;
+            this.txtAvgAmount.Location = new System.Drawing.Point(469, 325);
+            this.txtAvgAmount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtAvgAmount.Name = "txtAvgAmount";
+            this.txtAvgAmount.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtAvgAmount.Size = new System.Drawing.Size(187, 33);
+            this.txtAvgAmount.TabIndex = 125;
+            this.txtAvgAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(374, 332);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 22);
+            this.label9.TabIndex = 126;
+            this.label9.Text = "平均金額:";
+            // 
             // dgvItem_Serno
             // 
             this.dgvItem_Serno.HeaderText = "Serno";
+            this.dgvItem_Serno.MinimumWidth = 6;
             this.dgvItem_Serno.Name = "dgvItem_Serno";
             this.dgvItem_Serno.ReadOnly = true;
             this.dgvItem_Serno.Visible = false;
+            this.dgvItem_Serno.Width = 110;
             // 
             // dgvItem_Code
             // 
             this.dgvItem_Code.HeaderText = "商品條碼";
+            this.dgvItem_Code.MinimumWidth = 6;
             this.dgvItem_Code.Name = "dgvItem_Code";
             this.dgvItem_Code.ReadOnly = true;
             this.dgvItem_Code.Width = 200;
@@ -637,13 +704,23 @@
             // dgvItem_Name
             // 
             this.dgvItem_Name.HeaderText = "商品機型";
+            this.dgvItem_Name.MinimumWidth = 6;
             this.dgvItem_Name.Name = "dgvItem_Name";
             this.dgvItem_Name.ReadOnly = true;
             this.dgvItem_Name.Width = 150;
             // 
+            // dgvItem_Import
+            // 
+            this.dgvItem_Import.HeaderText = "進貨金額";
+            this.dgvItem_Import.MinimumWidth = 6;
+            this.dgvItem_Import.Name = "dgvItem_Import";
+            this.dgvItem_Import.ReadOnly = true;
+            this.dgvItem_Import.Width = 110;
+            // 
             // dgvItem_Amount
             // 
             this.dgvItem_Amount.HeaderText = "出貨金額";
+            this.dgvItem_Amount.MinimumWidth = 6;
             this.dgvItem_Amount.Name = "dgvItem_Amount";
             this.dgvItem_Amount.ReadOnly = true;
             this.dgvItem_Amount.Width = 130;
@@ -651,27 +728,36 @@
             // dgvItem_Dealer
             // 
             this.dgvItem_Dealer.HeaderText = "出貨人員";
+            this.dgvItem_Dealer.MinimumWidth = 6;
             this.dgvItem_Dealer.Name = "dgvItem_Dealer";
             this.dgvItem_Dealer.ReadOnly = true;
+            this.dgvItem_Dealer.Width = 110;
             // 
             // dgvItem_ImportDTTM
             // 
             this.dgvItem_ImportDTTM.HeaderText = "出貨日期";
+            this.dgvItem_ImportDTTM.MinimumWidth = 6;
             this.dgvItem_ImportDTTM.Name = "dgvItem_ImportDTTM";
             this.dgvItem_ImportDTTM.ReadOnly = true;
+            this.dgvItem_ImportDTTM.Width = 110;
             // 
             // dgvItem_Comment
             // 
             this.dgvItem_Comment.HeaderText = "出貨備註";
+            this.dgvItem_Comment.MinimumWidth = 6;
             this.dgvItem_Comment.Name = "dgvItem_Comment";
             this.dgvItem_Comment.ReadOnly = true;
+            this.dgvItem_Comment.Width = 110;
             // 
             // InventoryExportEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(602, 733);
+            this.ClientSize = new System.Drawing.Size(702, 794);
+            this.Controls.Add(this.txtAvgAmount);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnAvg);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ddlDealer);
             this.Controls.Add(this.dpkExportDTTM);
@@ -744,9 +830,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox ddlDealer;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAvg;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAvgAmount;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Serno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Code;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Import;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_Dealer;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvItem_ImportDTTM;

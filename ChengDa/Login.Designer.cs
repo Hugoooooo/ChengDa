@@ -72,12 +72,13 @@
             this.txtLoginAccount.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
             this.txtLoginAccount.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
             this.txtLoginAccount.LineThickness = 2;
-            this.txtLoginAccount.Location = new System.Drawing.Point(93, 171);
-            this.txtLoginAccount.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtLoginAccount.Location = new System.Drawing.Point(108, 185);
+            this.txtLoginAccount.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtLoginAccount.Name = "txtLoginAccount";
             this.txtLoginAccount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtLoginAccount.Size = new System.Drawing.Size(200, 38);
+            this.txtLoginAccount.Size = new System.Drawing.Size(233, 41);
             this.txtLoginAccount.TabIndex = 2;
+            this.txtLoginAccount.Text = "hugoma";
             this.txtLoginAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtLoginPassword
@@ -92,13 +93,14 @@
             this.txtLoginPassword.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
             this.txtLoginPassword.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
             this.txtLoginPassword.LineThickness = 2;
-            this.txtLoginPassword.Location = new System.Drawing.Point(92, 243);
-            this.txtLoginPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLoginPassword.Location = new System.Drawing.Point(107, 263);
+            this.txtLoginPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLoginPassword.Name = "txtLoginPassword";
             this.txtLoginPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtLoginPassword.Size = new System.Drawing.Size(201, 33);
+            this.txtLoginPassword.Size = new System.Drawing.Size(234, 36);
             this.txtLoginPassword.TabIndex = 3;
             this.txtLoginPassword.TabStop = false;
+            this.txtLoginPassword.Text = "8319";
             this.txtLoginPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtLoginPassword.Enter += new System.EventHandler(this.txtLoginPassword_Enter);
             this.txtLoginPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginPassword_KeyDown);
@@ -125,14 +127,14 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(53, 322);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogin.Location = new System.Drawing.Point(62, 349);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
             this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(240, 42);
+            this.btnLogin.Size = new System.Drawing.Size(280, 46);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,9 +152,9 @@
             this.panelSubmit.Controls.Add(this.txtPassword2);
             this.panelSubmit.Controls.Add(this.txtPassword);
             this.panelSubmit.Controls.Add(this.txtAccount);
-            this.panelSubmit.Location = new System.Drawing.Point(14, 35);
+            this.panelSubmit.Location = new System.Drawing.Point(16, 38);
             this.panelSubmit.Name = "panelSubmit";
-            this.panelSubmit.Size = new System.Drawing.Size(324, 451);
+            this.panelSubmit.Size = new System.Drawing.Size(378, 489);
             this.panelSubmit.TabIndex = 9;
             this.panelSubmit.Visible = false;
             // 
@@ -161,9 +163,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            this.label1.Location = new System.Drawing.Point(100, 18);
+            this.label1.Location = new System.Drawing.Point(117, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 28);
+            this.label1.Size = new System.Drawing.Size(134, 31);
             this.label1.TabIndex = 22;
             this.label1.Text = "新增使用者";
             // 
@@ -189,14 +191,14 @@
             this.btnSubmit.IconVisible = true;
             this.btnSubmit.IconZoom = 90D;
             this.btnSubmit.IsTab = false;
-            this.btnSubmit.Location = new System.Drawing.Point(33, 340);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(38, 368);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
             this.btnSubmit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(154)))), ((int)(((byte)(193)))));
             this.btnSubmit.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSubmit.selected = false;
-            this.btnSubmit.Size = new System.Drawing.Size(256, 40);
+            this.btnSubmit.Size = new System.Drawing.Size(299, 43);
             this.btnSubmit.TabIndex = 19;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,9 +211,9 @@
             this.lbBackLogin.AutoSize = true;
             this.lbBackLogin.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBackLogin.ForeColor = System.Drawing.Color.Black;
-            this.lbBackLogin.Location = new System.Drawing.Point(9, 413);
+            this.lbBackLogin.Location = new System.Drawing.Point(10, 447);
             this.lbBackLogin.Name = "lbBackLogin";
-            this.lbBackLogin.Size = new System.Drawing.Size(57, 20);
+            this.lbBackLogin.Size = new System.Drawing.Size(64, 23);
             this.lbBackLogin.TabIndex = 16;
             this.lbBackLogin.Text = "< 返回";
             this.lbBackLogin.Click += new System.EventHandler(this.lbBackLogin_Click);
@@ -221,9 +223,9 @@
             this.lbSubmitMessage.AutoSize = true;
             this.lbSubmitMessage.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSubmitMessage.ForeColor = System.Drawing.Color.White;
-            this.lbSubmitMessage.Location = new System.Drawing.Point(33, 360);
+            this.lbSubmitMessage.Location = new System.Drawing.Point(38, 390);
             this.lbSubmitMessage.Name = "lbSubmitMessage";
-            this.lbSubmitMessage.Size = new System.Drawing.Size(0, 20);
+            this.lbSubmitMessage.Size = new System.Drawing.Size(0, 23);
             this.lbSubmitMessage.TabIndex = 10;
             // 
             // txtName
@@ -236,10 +238,10 @@
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.isPassword = false;
-            this.txtName.Location = new System.Drawing.Point(33, 262);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(38, 284);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(256, 49);
+            this.txtName.Size = new System.Drawing.Size(299, 53);
             this.txtName.TabIndex = 14;
             this.txtName.Text = "請輸入名稱";
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -255,10 +257,10 @@
             this.txtPassword2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword2.ForeColor = System.Drawing.Color.Black;
             this.txtPassword2.isPassword = false;
-            this.txtPassword2.Location = new System.Drawing.Point(33, 199);
-            this.txtPassword2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword2.Location = new System.Drawing.Point(38, 216);
+            this.txtPassword2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword2.Name = "txtPassword2";
-            this.txtPassword2.Size = new System.Drawing.Size(256, 49);
+            this.txtPassword2.Size = new System.Drawing.Size(299, 53);
             this.txtPassword2.TabIndex = 13;
             this.txtPassword2.Text = "請確認密碼";
             this.txtPassword2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -275,10 +277,10 @@
             this.txtPassword.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.isPassword = false;
-            this.txtPassword.Location = new System.Drawing.Point(33, 137);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(38, 148);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(256, 49);
+            this.txtPassword.Size = new System.Drawing.Size(299, 53);
             this.txtPassword.TabIndex = 12;
             this.txtPassword.Text = "請輸入密碼";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -295,11 +297,11 @@
             this.txtAccount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccount.ForeColor = System.Drawing.Color.Black;
             this.txtAccount.isPassword = false;
-            this.txtAccount.Location = new System.Drawing.Point(33, 75);
-            this.txtAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccount.Location = new System.Drawing.Point(38, 81);
+            this.txtAccount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtAccount.Name = "txtAccount";
-            this.txtAccount.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.txtAccount.Size = new System.Drawing.Size(256, 49);
+            this.txtAccount.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.txtAccount.Size = new System.Drawing.Size(299, 53);
             this.txtAccount.TabIndex = 11;
             this.txtAccount.Text = "請輸入帳號";
             this.txtAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -328,14 +330,14 @@
             this.btnSignUp.IconVisible = true;
             this.btnSignUp.IconZoom = 90D;
             this.btnSignUp.IsTab = false;
-            this.btnSignUp.Location = new System.Drawing.Point(53, 382);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignUp.Location = new System.Drawing.Point(62, 414);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Normalcolor = System.Drawing.Color.Gray;
             this.btnSignUp.OnHovercolor = System.Drawing.Color.LightGray;
             this.btnSignUp.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSignUp.selected = false;
-            this.btnSignUp.Size = new System.Drawing.Size(241, 40);
+            this.btnSignUp.Size = new System.Drawing.Size(281, 43);
             this.btnSignUp.TabIndex = 18;
             this.btnSignUp.Text = "Sign up";
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -351,9 +353,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(54, 240);
+            this.pictureBox3.Location = new System.Drawing.Point(63, 260);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 36);
+            this.pictureBox3.Size = new System.Drawing.Size(37, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -361,9 +363,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(53, 170);
+            this.pictureBox2.Location = new System.Drawing.Point(62, 184);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(38, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -381,9 +383,9 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.txtLoginAccount);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(350, 0);
+            this.panel1.Location = new System.Drawing.Point(409, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 500);
+            this.panel1.Size = new System.Drawing.Size(408, 542);
             this.panel1.TabIndex = 19;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -394,9 +396,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 20F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            this.label4.Location = new System.Drawing.Point(140, 64);
+            this.label4.Location = new System.Drawing.Point(163, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 35);
+            this.label4.Size = new System.Drawing.Size(93, 38);
             this.label4.TabIndex = 21;
             this.label4.Text = "登  入";
             // 
@@ -405,9 +407,9 @@
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            this.lblClose.Location = new System.Drawing.Point(314, 9);
+            this.lblClose.Location = new System.Drawing.Point(366, 10);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 23);
+            this.lblClose.Size = new System.Drawing.Size(28, 27);
             this.lblClose.TabIndex = 20;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -415,9 +417,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(91, 96);
+            this.pictureBox5.Location = new System.Drawing.Point(106, 104);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(179, 155);
+            this.pictureBox5.Size = new System.Drawing.Size(209, 168);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
@@ -427,9 +429,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(95, 297);
+            this.label2.Location = new System.Drawing.Point(111, 322);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 35);
+            this.label2.Size = new System.Drawing.Size(185, 38);
             this.label2.TabIndex = 20;
             this.label2.Text = "政  達  冷  氣";
             // 
@@ -438,18 +440,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(86, 353);
+            this.label3.Location = new System.Drawing.Point(100, 382);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 25);
+            this.label3.Size = new System.Drawing.Size(211, 29);
             this.label3.TabIndex = 21;
             this.label3.Text = "後  台  管  理  系  統";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(183)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(700, 500);
+            this.ClientSize = new System.Drawing.Size(817, 542);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox5);

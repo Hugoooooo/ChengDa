@@ -343,12 +343,12 @@ namespace System.Framework.DataLayer
         public SQLConnection(string AConnectionString, bool ADebug)
         {
             _connectionString = AConnectionString;
-            if (ADebug)
-            {
-                _debug = true;
-                XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log4net.config")));
-                sw = new Stopwatch();
-            }
+            //if (ADebug)
+            //{
+            //    _debug = true;
+            //    XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log4net.config")));
+            //    sw = new Stopwatch();
+            //}
 
             _conn = new SqlConnection(AConnectionString);
         }
